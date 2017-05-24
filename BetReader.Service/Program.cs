@@ -27,23 +27,23 @@ namespace BetReader.Service
             container.RegisterType<BbFeedReadJob, BbFeedReadJob>();
             container.RegisterType<CouponRepository, CouponRepository>(new HierarchicalLifetimeManager());
 
-            //            while (true)
-            //            {
-            //                var processor = new FeedProcessor(new ChromeDriver(GlobalConstants.ChromeDriverPath));
-            //                var couponRepository = container.Resolve<CouponRepository>();
-            //
-            //                using (processor)
-            //                {
-            //                    List<Coupon> coupons = processor.GetValuableCoupons().ToList();
-            //
-            //                    foreach (Coupon coupon in coupons)
-            //                    {
-            //                        couponRepository.CreateSeedToConsole(coupon);
-            //                    }
-            //                }
-            //
-            //                Thread.Sleep(new TimeSpan(0, 1, 0));
-            //            }
+//                        while (true)
+//                        {
+//                            var processor = new FeedScraper(new ChromeDriver(GlobalConstants.ChromeDriverPath));
+//                            var couponRepository = container.Resolve<CouponRepository>();
+//            
+//                            using (processor)
+//                            {
+//                                List<Coupon> coupons = processor.GetValuableCoupons().ToList();
+//            
+//                                foreach (Coupon coupon in coupons)
+//                                {
+//                                    couponRepository.CreateSeedToConsole(coupon);
+//                                }
+//                            }
+//            
+//                            Thread.Sleep(new TimeSpan(0, 1, 0));
+//                        }
 
             //            while (true)
             //            {

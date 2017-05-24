@@ -51,6 +51,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Api\BetControllerTests.cs" />
+    <Compile Include="Core\FeedResolverTests.cs" />
     <Compile Include="Core\FeedScraperTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
