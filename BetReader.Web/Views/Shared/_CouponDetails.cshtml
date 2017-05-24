@@ -1,0 +1,34 @@
+﻿@model BetReader.Model.Entities.Coupon
+    
+
+<h1>@Model.CouponUrl</h1>
+
+<div id="couponDetailsContainer" style="display: none;">
+    <div id="tableDetailsContainer">
+        <h3>Selected coupon: </h3>
+        <div id="actionButtons" class="action-buttons">
+            <button id="playCouponBtn" type="button" class="btn btn-success">Play</button>
+            <button id="dismissCoupon" type="button" class="btn btn-danger">Dismiss</button>
+        </div>
+        <ul id="couponList" class="list-group">
+            <li class="list-group-item">
+                <b>Authors Picks Count: @Model.AuthorsPicksCount</b>
+            </li>
+            <li class="list-group-item">
+                <b>Authors Yield:</b>
+            </li>
+            <li class="list-group-item">
+                <b>Coupon Url: </b><a target="_blank" href="">external URL</a>
+            </li>
+            <li class="list-group-item">
+                <b>Description:</b>
+            </li>
+            <li class="list-group-item">
+                <b>Odds:</b>
+            </li>
+            <div id="picksDetails" class="picksDetails">
+
+            </div>
+        </ul>
+    </div>
+</div>
