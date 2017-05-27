@@ -1,8 +1,7 @@
-namespace BetReader.Web.Model.Database.Migrations
+using System.Data.Entity.Migrations;
+
+namespace BetReader.Api.Models.Database.Migrations
 {
-    using System;
-    using System.Data.Entity.Migrations;
-    
     public partial class InitMigration : DbMigration
     {
         public override void Up()

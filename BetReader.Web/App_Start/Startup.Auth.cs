@@ -1,5 +1,6 @@
 ﻿using System;
-using BetReader.Web.Model.Database;
+using BetReader.Model.Entities.Identity;
+using BetReader.Web.Model;
 using BetReader.Web.Model.Identity;
 using BetReader.Web.Model.Identity.Providers;
 using Microsoft.AspNet.Identity;

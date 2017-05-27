@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Web.Http;
+using BetReader.Api.Filters;
 using BetReader.Api.Models.Services;
 using BetReader.Model.Entities;
 
 namespace BetReader.Api.Controllers
 {
+    [JwtAuthentication]
     public class BetController : ApiController
     {
         private readonly CouponService couponService;

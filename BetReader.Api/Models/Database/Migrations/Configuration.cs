@@ -1,21 +1,19 @@
 using System;
 using System.Data.Entity.Migrations;
 using System.Globalization;
-using System.Linq;
 using BetReader.Model.Entities;
-using BetReader.Web.Model.Identity;
+using BetReader.Model.Entities.Identity;
 using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
 
-namespace BetReader.Web.Model.Database.Migrations
+namespace BetReader.Api.Models.Database.Migrations
 {
     internal sealed class Configuration : DbMigrationsConfiguration<BetReaderContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            MigrationsDirectory = @"Model\Database\Migrations";
-            ContextKey = "BetReader.Web.Model.Database.BetReaderContext";
+            MigrationsDirectory = @"Models\Database\Migrations";
+            ContextKey = "BetReader.Api.Models.Database.BetReaderContext";
         }
 
         protected override void Seed(BetReaderContext context)

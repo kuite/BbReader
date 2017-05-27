@@ -1,12 +1,9 @@
 ﻿using System.Data.Entity;
-using System.Security.Claims;
-using System.Threading.Tasks;
 using BetReader.Model.Entities;
-using BetReader.Web.Model.Identity;
-using Microsoft.AspNet.Identity;
+using BetReader.Model.Entities.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
-namespace BetReader.Web.Model.Database
+namespace BetReader.Api.Models.Database
 {
     public class BetReaderContext : IdentityDbContext<ApplicationUser>
     {

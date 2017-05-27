@@ -1,7 +1,6 @@
 ﻿using System.Web.Http;
 using BetReader.Api.Models.Repositores;
 using BetReader.Api.Models.Services;
-using BetReader.Web;
 using Microsoft.Practices.Unity;
 
 namespace BetReader.Api
