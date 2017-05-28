@@ -62,8 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Coupon.cs" />
-    <Compile Include="Entities\Identity\ApplicationUser.cs" />
     <Compile Include="Entities\Pick.cs" />
+    <Compile Include="Identity\AccountViewModels.cs" />
+    <Compile Include="Identity\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -2,8 +2,8 @@ using System;
 using System.Data.Entity.Migrations;
 using System.Globalization;
 using BetReader.Model.Entities;
-using BetReader.Model.Entities.Identity;
 using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace BetReader.Api.Models.Database.Migrations
 {
@@ -492,7 +492,7 @@ namespace BetReader.Api.Models.Database.Migrations
             var passwordHash = new PasswordHasher();
             string password = passwordHash.HashPassword("polska12");
             context.Users.AddOrUpdate(u => u.UserName,
-                new ApplicationUser
+                new IdentityUser
                 {
                     Email = "admin@wp.pl",
                     UserName = "admin@wp.pl",

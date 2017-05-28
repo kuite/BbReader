@@ -1,12 +1,12 @@
 ﻿using System.Net;
 using System.Web.Http;
+using BetReader.Api.Filters;
+using BetReader.Api.Models.Repositores;
 
 namespace BetReader.Api.Controllers
 {
     public class TokenController : ApiController
     {
-        // THis is naive endpoint for demo, it should use Basic authentication to provdie token or POST request
-        [Route("api/Token/Get")]
         [AllowAnonymous]
         public string Get(string username, string password)
         {
@@ -20,6 +20,11 @@ namespace BetReader.Api.Controllers
 
         private bool CheckUser(string username, string password)
         {
+            var auth = new AuthRepository();
+
+            var user = auth.GetUser(username, password);
+            var gg = 7;
+
             // should check in the database
             return true;
         }

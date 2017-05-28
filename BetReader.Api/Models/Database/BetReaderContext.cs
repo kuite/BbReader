@@ -1,11 +1,10 @@
 ﻿using System.Data.Entity;
 using BetReader.Model.Entities;
-using BetReader.Model.Entities.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace BetReader.Api.Models.Database
 {
-    public class BetReaderContext : IdentityDbContext<ApplicationUser>
+    public class BetReaderContext : IdentityDbContext<IdentityUser>
     {
         public DbSet<Coupon> Coupons { get; set; }
 
