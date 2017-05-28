@@ -1,9 +1,9 @@
-﻿using Microsoft.Practices.Unity;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Web.Http.Dependencies;
+using Microsoft.Practices.Unity;
 
-namespace BetReader.Web
+namespace BetReader.Api
 {
     public class UnityResolver : IDependencyResolver
     {

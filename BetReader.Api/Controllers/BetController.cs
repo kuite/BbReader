@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Web.Http;
+using BetReader.Api.Filters;
 using BetReader.Api.Models.Services;
 using BetReader.Model.Entities;
 
 namespace BetReader.Api.Controllers
 {
+    [JwtAuthentication]
     public class BetController : ApiController
     {
         private readonly CouponService couponService;
@@ -79,7 +81,7 @@ namespace BetReader.Api.Controllers
         [HttpPost]
         public IHttpActionResult UpdateCoupons(List<Coupon> coupons)
         {
-            bool success = couponService.UpdateBulk(coupons);
+            bool success = couponService.UpdateCoupons(coupons);
 
             if (success)
             {
@@ -92,7 +94,7 @@ namespace BetReader.Api.Controllers
         [HttpPost]
         public IHttpActionResult AddCouponsToPlay(List<Coupon> coupons)
         {
-            bool success = couponService.AddBulk(coupons);
+            bool success = couponService.AddCoupons(coupons);
 
             if (success)
             {

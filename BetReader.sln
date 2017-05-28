@@ -9,13 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetReader.Model", "BetReade
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetReader.Web", "BetReader.Web\BetReader.Web.csproj", "{8E11D75C-77BF-4565-A303-42EDAFC03730}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetReader.Api", "BetReader.Api\BetReader.Api.csproj", "{DD793E48-AB79-46E5-AAAC-0E88697716A3}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetReader.Service", "BetReader.Service\BetReader.Service.csproj", "{55B064A9-6848-46F7-9DE9-E26CE7791112}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetReader.Tests", "BetReader.Tests\BetReader.Tests.csproj", "{E79A8F5E-772E-41FA-B582-BB44DB93E59B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetReader.Scraper", "BetReader.Scraper\BetReader.Scraper.csproj", "{3718C4DA-2297-44B9-AB3F-CA07A0565166}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetReader.Api", "BetReader.Api\BetReader.Api.csproj", "{9E101036-25AC-4C42-9D48-236622E731E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,6 @@ Global
 		{8E11D75C-77BF-4565-A303-42EDAFC03730}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E11D75C-77BF-4565-A303-42EDAFC03730}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E11D75C-77BF-4565-A303-42EDAFC03730}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DD793E48-AB79-46E5-AAAC-0E88697716A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DD793E48-AB79-46E5-AAAC-0E88697716A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DD793E48-AB79-46E5-AAAC-0E88697716A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DD793E48-AB79-46E5-AAAC-0E88697716A3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{55B064A9-6848-46F7-9DE9-E26CE7791112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{55B064A9-6848-46F7-9DE9-E26CE7791112}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55B064A9-6848-46F7-9DE9-E26CE7791112}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{3718C4DA-2297-44B9-AB3F-CA07A0565166}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3718C4DA-2297-44B9-AB3F-CA07A0565166}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3718C4DA-2297-44B9-AB3F-CA07A0565166}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E101036-25AC-4C42-9D48-236622E731E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E101036-25AC-4C42-9D48-236622E731E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E101036-25AC-4C42-9D48-236622E731E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E101036-25AC-4C42-9D48-236622E731E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -76,12 +76,12 @@ namespace BetReader.Api.Models.Services
                 c.IsPlayed).ToList();
         }
 
-        public bool AddBulk(List<Coupon> coupons)
+        public bool AddCoupons(List<Coupon> coupons)
         {
             throw new System.NotImplementedException();
         }
 
-        public bool UpdateBulk(List<Coupon> coupons)
+        public bool UpdateCoupons(List<Coupon> coupons)
         {
             throw new System.NotImplementedException();
         }
