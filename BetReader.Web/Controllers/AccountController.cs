@@ -11,11 +11,6 @@ namespace BetReader.Web.Controllers
     [Authorize]
     public class AccountController : Controller
     {
-
-        public AccountController()
-        {
-        }
-
         //
         // GET: /Account/Login
         [AllowAnonymous]
