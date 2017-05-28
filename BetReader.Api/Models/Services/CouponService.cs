@@ -78,12 +78,21 @@ namespace BetReader.Api.Models.Services
 
         public bool AddCoupons(List<Coupon> coupons)
         {
-            throw new System.NotImplementedException();
+            foreach (var singleCoupon in coupons)
+            {
+                couponRepository.Create(singleCoupon);
+            }
+            couponRepository.SaveChanges();
+            return true;
         }
 
         public bool UpdateCoupons(List<Coupon> coupons)
         {
-            throw new System.NotImplementedException();
+            foreach (var singleCoupon in coupons)
+            {
+                couponRepository.Update(singleCoupon);
+            }
+            return true;
         }
     }
 }
