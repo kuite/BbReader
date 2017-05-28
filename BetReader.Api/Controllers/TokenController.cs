@@ -12,7 +12,7 @@ namespace BetReader.Api.Controllers
         {
             if (CheckUser(username, password))
             {
-                return JwtManager.GenerateToken(username);
+                return JwtManager.GenerateToken(username, 360);
             }
 
             throw new HttpResponseException(HttpStatusCode.Unauthorized);
@@ -23,10 +23,13 @@ namespace BetReader.Api.Controllers
             var auth = new AuthRepository();
 
             var user = auth.GetUser(username, password);
-            var gg = 7;
 
-            // should check in the database
-            return true;
+            if (user != null)
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }
