@@ -1,4 +1,5 @@
 ﻿using System.Web.Http;
+using System.Web.Http.Cors;
 using BetReader.Api.Models.Repositores;
 using BetReader.Api.Models.Services;
 using Microsoft.Practices.Unity;
@@ -9,6 +10,9 @@ namespace BetReader.Api
     {
         public static void Register(HttpConfiguration config)
         {
+            EnableCrossSiteRequests(config);
+            config.Filters.Add(new AuthorizeAttribute());
+
             // Web API configuration and services
             config.Formatters.JsonFormatter
             .SerializerSettings
@@ -32,6 +36,15 @@ namespace BetReader.Api
             container.RegisterType<CouponService, CouponService>();
             container.RegisterType<ICouponRepository, CouponRepository>();
             config.DependencyResolver = new UnityResolver(container);
+        }
+
+        private static void EnableCrossSiteRequests(HttpConfiguration config)
+        {
+            var cors = new EnableCorsAttribute(
+                origins: "*",
+                headers: "*",
+                methods: "*");
+            config.EnableCors(cors);
         }
     }
 }

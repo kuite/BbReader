@@ -1,15 +1,23 @@
-﻿using System.Net;
+﻿using System.IO;
+using System.Linq;
+using System.Net;
+using System.Text;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using BetReader.Api.Filters;
 using BetReader.Api.Models.Repositores;
+using BetReader.Model.Identity;
 
 namespace BetReader.Api.Controllers
 {
     public class TokenController : ApiController
     {
         [AllowAnonymous]
-        public string Get(string username, string password)
+        [HttpPost]
+        public string GetToken([FromBody]LoginModel model)
         {
+            string username = model.Email;
+            string password = model.Password;
             if (CheckUser(username, password))
             {
                 return JwtManager.GenerateToken(username, 360);
@@ -31,5 +39,11 @@ namespace BetReader.Api.Controllers
 
             return false;
         }
+    }
+
+    public class LoginModel
+    {
+        public string Email { get; set; }
+        public string Password { get; set; }
     }
 }

@@ -8,8 +8,7 @@
     <div class="card card-container">
         <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
         <section id="loginForm" class="form-signin">
-            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form" }))
-            {
+
                 @Html.AntiForgeryToken()
                 <hr />
                 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
@@ -24,12 +23,12 @@
                         @Html.LabelFor(m => m.RememberMe)
                     </div>
                 </label>
-                <input type="submit" value="Sign in" id="login" class="btn btn-lg btn-primary btn-block btn-signin" />
-            }
+                <input type="submit" value="Sign in" id="loginBtn" class="btn btn-lg btn-primary btn-block btn-signin" />
         </section>
     </div>
 </div>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/Scripts/Account/Login.js")
 }
