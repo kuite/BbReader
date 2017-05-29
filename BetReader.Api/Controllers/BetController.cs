@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using BetReader.Api.Filters;
 using BetReader.Api.Models.Services;
 using BetReader.Model.Entities;

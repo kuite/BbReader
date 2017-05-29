@@ -7,7 +7,7 @@ namespace BetReader.Api
 {
     public static class JwtManager
     {
-        public const string Secret = "856FECBA3B06519C8DDDBC80BB080553"; // your symetric
+        public const string Secret = "856FECBA3B06519C8HKEBC80BB636719"; // your symetric
 
         public static string GenerateToken(string username, int expireMinutes = 20)
         {
