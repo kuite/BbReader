@@ -41,7 +41,25 @@ namespace BetReader.Tests.Core
         public void AmountOfCouponsTest()
         {
             var actualCouponsCount = feedScraper.GetValuableCoupons().Count();
-            Assert.AreEqual(actualCouponsCount, 20);
+            bool isCountValid = actualCouponsCount > 15;
+            Assert.AreEqual(true, isCountValid);
+        }
+
+        [Test]
+        public void CouponsFieldsTest()
+        {
+            var actualCoupons = feedScraper.GetValuableCoupons();
+            foreach (var coupon in actualCoupons)
+            {
+                var isAuthorValid = coupon.Author.Length > 0;
+                //var isYieldValid = coupon.AuthorsYield >= GlobalConstants.MinimalYield;
+                //var isPCountValid = coupon.AuthorsPicksCount >= GlobalConstants.MinimalPicksCount;
+                var isUrlValid = coupon.CouponUrl.StartsWith("https://")
+                                 && coupon.CouponUrl.Contains("blogabet.com/pick");
+                var isStakeValid = coupon.AuthorsStake >= 0 && coupon.AuthorsStake <= 10;
+                var isCouponValid = isAuthorValid && isUrlValid && isStakeValid;
+                Assert.AreEqual(true, isCouponValid);
+            }
         }
     }
 }
