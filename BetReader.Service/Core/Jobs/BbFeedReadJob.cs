@@ -31,7 +31,7 @@ namespace BetReader.Service.Core.Jobs
 
                 using (processor)
                 {
-                    List<Coupon> coupons = processor.GetValuableCoupons().ToList();
+                    List<Coupon> coupons = processor.GetValuableCoupons(GlobalConstants.Url).ToList();
 
                     foreach (Coupon coupon in coupons)
                     {

@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BetReader.Constans;
 using BetReader.Model.Entities;
 using BetReader.Scraper.Core;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -22,13 +23,13 @@ namespace BetReader.Tests.Core
         [SetUp]
         public void Setup()
         {
-            feedScraper = new FeedScraper(new ChromeDriver(@"C:\Users\hitenz\Desktop"));
+            feedScraper = new FeedScraper(new ChromeDriver(GlobalConstants.ChromeDriverPath));
         }
 
         [Test]
         public void GetValuableCouponsTest()
         {
-            var actualCoupons = feedScraper.GetValuableCoupons().Take(5).ToList();
+            var actualCoupons = feedScraper.GetValuableCoupons(GlobalConstants.LocalBbUrl).Take(5).ToList();
             var actualJson = JsonConvert.SerializeObject(actualCoupons);
 
             var expectedCoupons = File.ReadAllText("C:/projects/BetReader/TestSiteBb/feed.txt", Encoding.UTF8);
@@ -40,20 +41,20 @@ namespace BetReader.Tests.Core
         [Test]
         public void AmountOfCouponsTest()
         {
-            var actualCouponsCount = feedScraper.GetValuableCoupons().Count();
+            var actualCouponsCount = feedScraper.GetValuableCoupons(GlobalConstants.Url).Count();
             bool isCountValid = actualCouponsCount > 15;
             Assert.AreEqual(true, isCountValid);
         }
 
         [Test]
-        public void CouponsFieldsTest()
+        [TestCase(GlobalConstants.Url)]
+        [TestCase(GlobalConstants.LocalBbUrl)]
+        public void CouponsFieldsTest(string sourcePath)
         {
-            var actualCoupons = feedScraper.GetValuableCoupons();
+            var actualCoupons = feedScraper.GetValuableCoupons(sourcePath);
             foreach (var coupon in actualCoupons)
             {
                 var isAuthorValid = coupon.Author.Length > 0;
-                //var isYieldValid = coupon.AuthorsYield >= GlobalConstants.MinimalYield;
-                //var isPCountValid = coupon.AuthorsPicksCount >= GlobalConstants.MinimalPicksCount;
                 var isUrlValid = coupon.CouponUrl.StartsWith("https://")
                                  && coupon.CouponUrl.Contains("blogabet.com/pick");
                 var isStakeValid = coupon.AuthorsStake >= 0 && coupon.AuthorsStake <= 10;
