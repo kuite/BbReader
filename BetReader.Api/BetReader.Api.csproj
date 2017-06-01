@@ -191,7 +191,6 @@
     <Compile Include="Models\Repositores\IRepository.cs" />
     <Compile Include="Models\Services\CouponService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

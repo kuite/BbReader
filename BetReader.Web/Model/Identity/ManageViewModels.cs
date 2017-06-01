@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNet.Identity;
+using Microsoft.Owin.Security;
 
-namespace BetReader.Model.Identity
+namespace BetReader.Web.Model.Identity
 {
     public class IndexViewModel
     {
@@ -11,6 +12,12 @@ namespace BetReader.Model.Identity
         public string PhoneNumber { get; set; }
         public bool TwoFactor { get; set; }
         public bool BrowserRemembered { get; set; }
+    }
+
+    public class ManageLoginsViewModel
+    {
+        public IList<UserLoginInfo> CurrentLogins { get; set; }
+        public IList<AuthenticationDescription> OtherLogins { get; set; }
     }
 
     public class FactorViewModel
@@ -69,5 +76,11 @@ namespace BetReader.Model.Identity
         [Phone]
         [Display(Name = "Phone Number")]
         public string PhoneNumber { get; set; }
+    }
+
+    public class ConfigureTwoFactorViewModel
+    {
+        public string SelectedProvider { get; set; }
+        public ICollection<System.Web.Mvc.SelectListItem> Providers { get; set; }
     }
 }
