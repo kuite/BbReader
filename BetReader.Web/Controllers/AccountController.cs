@@ -1,7 +1,8 @@
 ﻿using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
-using BetReader.Model.Identity;
+using BetReader.Web.Model.Identity;
+using BetReader.Web.Model.Identity.Providers;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
@@ -11,6 +12,43 @@ namespace BetReader.Web.Controllers
     [Authorize]
     public class AccountController : Controller
     {
+        private ApplicationSignInManager signInManager;
+        private ApplicationUserManager userManager;
+
+        public AccountController()
+        {
+        }
+
+        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
+        {
+            UserManager = userManager;
+            SignInManager = signInManager;
+        }
+
+        public ApplicationSignInManager SignInManager
+        {
+            get
+            {
+                return signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
+            }
+            private set 
+            { 
+                signInManager = value; 
+            }
+        }
+
+        public ApplicationUserManager UserManager
+        {
+            get
+            {
+                return userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
+            }
+            private set
+            {
+                userManager = value;
+            }
+        }
+
         //
         // GET: /Account/Login
         [AllowAnonymous]
@@ -32,8 +70,19 @@ namespace BetReader.Web.Controllers
                 return View(model);
             }
 
-            return RedirectToLocal(returnUrl);
-
+            // This doesn't count login failures towards account lockout
+            // To enable password failures to trigger account lockout, change to shouldLockout: true
+            var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
+            switch (result)
+            {
+                case SignInStatus.Success:
+                    return RedirectToLocal(returnUrl);
+                case SignInStatus.LockedOut:
+                case SignInStatus.Failure:
+                default:
+                    ModelState.AddModelError("", "Invalid login attempt.");
+                    return View(model);
+            }
         }
 
         //
@@ -46,6 +95,26 @@ namespace BetReader.Web.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                if (userManager != null)
+                {
+                    userManager.Dispose();
+                    userManager = null;
+                }
+
+                if (signInManager != null)
+                {
+                    signInManager.Dispose();
+                    signInManager = null;
+                }
+            }
+
+            base.Dispose(disposing);
+        }
 
         #region Helpers
         // Used for XSRF protection when adding external logins
