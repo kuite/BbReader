@@ -9,6 +9,7 @@ using BetReader.Model.Entities;
 using BetReader.Scraper.Core;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using NUnit.Framework;
 using OpenQA.Selenium.Chrome;
 using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
@@ -30,12 +31,13 @@ namespace BetReader.Tests.Core
         public void GetValuableCouponsTest()
         {
             var actualCoupons = feedScraper.GetValuableCoupons(GlobalConstants.LocalBbUrl).Take(5).ToList();
-            var actualJson = JsonConvert.SerializeObject(actualCoupons);
+            JArray actualJarray = (JArray) JToken.FromObject(actualCoupons);
 
-            var expectedCoupons = File.ReadAllText("C:/projects/BetReader/TestSiteBb/feed.txt", Encoding.UTF8);
+            var expectedCoupons = File.ReadAllText("", Encoding.UTF8); //"C:/projects/BetReader/TestSiteBb/feed.txt"
             var expectedJson = JsonConvert.SerializeObject(expectedCoupons);
+            JArray expectedJarray = JArray.Parse(expectedJson);
 
-            Assert.AreEqual(actualJson, expectedJson);
+            Assert.AreEqual(expectedJarray, actualJarray);
         }
 
         [Test]
