@@ -3,7 +3,8 @@
 });
 
 var init = function () {
-    $('#loginBtn').click(getToken);
+    localStorage.clear();
+    $('#loginBtn').unbind('click').click(getToken);
 }
 
 var getToken = function() {
@@ -15,11 +16,12 @@ var getToken = function() {
             contentType: "application/json"
         },
         data: {
-            Email: "admin@wp.pl",
-            Password: "polska12"
+            Email: $('#Email').val(),
+            Password: $('#Password').val()
         },
         success: function (response) {
             console.log(response);
+            localStorage.setItem('token', JSON.stringify(response));
         },
         error: function (xhr, status, error) {
             console.log(xhr);
