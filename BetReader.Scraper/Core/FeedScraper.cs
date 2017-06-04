@@ -17,7 +17,7 @@ namespace BetReader.Scraper.Core
             this.driver = driver;
         }
 
-        public IEnumerable<Coupon> GetValuableCoupons(string sourcePath)
+        public IEnumerable<Coupon> GetValuableCoupons(string sourceUrl)
         {
             List<Coupon> coupons = new List<Coupon>();
             var couponFactory = new CouponFactory();
@@ -27,7 +27,7 @@ namespace BetReader.Scraper.Core
                 driver.Manage().Timeouts().PageLoad = new TimeSpan(0, 0, 7);
                 try
                 {
-                    driver.Navigate().GoToUrl(sourcePath);
+                    driver.Navigate().GoToUrl(sourceUrl);
                 }
                 catch (WebDriverTimeoutException ex)
                 {

@@ -70,12 +70,11 @@ namespace BetReader.Web.Controllers
                 return View(model);
             }
 
-            // This doesn't count login failures towards account lockout
-            // To enable password failures to trigger account lockout, change to shouldLockout: true
             var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
             switch (result)
             {
                 case SignInStatus.Success:
+                    SetTokenToCookie(Request);
                     return RedirectToLocal(returnUrl);
                 case SignInStatus.LockedOut:
                 case SignInStatus.Failure:
@@ -83,6 +82,11 @@ namespace BetReader.Web.Controllers
                     ModelState.AddModelError("", "Invalid login attempt.");
                     return View(model);
             }
+        }
+
+        private void SetTokenToCookie(HttpRequestBase request)
+        {
+            request.Cookies["token"].Value = "cookie value";
         }
 
         //
