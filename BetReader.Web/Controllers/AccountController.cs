@@ -6,6 +6,7 @@ using BetReader.Web.Model.Identity.Providers;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using RestSharp;
 
 namespace BetReader.Web.Controllers
 {
@@ -19,7 +20,7 @@ namespace BetReader.Web.Controllers
         {
         }
 
-        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
+        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
         {
             UserManager = userManager;
             SignInManager = signInManager;
@@ -31,9 +32,9 @@ namespace BetReader.Web.Controllers
             {
                 return signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
             }
-            private set 
-            { 
-                signInManager = value; 
+            private set
+            {
+                signInManager = value;
             }
         }
 
@@ -74,7 +75,7 @@ namespace BetReader.Web.Controllers
             switch (result)
             {
                 case SignInStatus.Success:
-                    SetTokenToCookie(Request);
+                    SetTokenToCookie(Response, model);
                     return RedirectToLocal(returnUrl);
                 case SignInStatus.LockedOut:
                 case SignInStatus.Failure:
@@ -82,11 +83,6 @@ namespace BetReader.Web.Controllers
                     ModelState.AddModelError("", "Invalid login attempt.");
                     return View(model);
             }
-        }
-
-        private void SetTokenToCookie(HttpRequestBase request)
-        {
-            request.Cookies["token"].Value = "cookie value";
         }
 
         //
@@ -99,6 +95,24 @@ namespace BetReader.Web.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        private void SetTokenToCookie(HttpResponseBase resp, LoginViewModel model)
+        {
+            var body = string.Format("{{\r\n    Email: \"{0}\",\r\n    Password: \"{1}\"\r\n}}", model.Email, model.Password);
+
+            var client = new RestClient(model.WebApiUrl + "/api/Token/GetToken");
+            var postRequest = new RestRequest(Method.POST);
+            postRequest.AddHeader("content-type", "application/json");
+            postRequest.AddParameter("application/json", body, ParameterType.RequestBody);
+            IRestResponse response = client.Execute(postRequest);
+
+            if (resp.Cookies["token"] == null)
+            {
+                resp.Cookies.Add(new System.Web.HttpCookie("token"));
+            }
+
+            string authToken = "Bearer " + response.Content.Remove(response.Content.Length - 1).Remove(0, 1);
+            resp.Cookies["token"].Value = authToken;
+        }
 
         protected override void Dispose(bool disposing)
         {
