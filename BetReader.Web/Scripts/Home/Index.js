@@ -8,7 +8,6 @@ var init = function () {
     $('#toPlayBtn').click(refreshToPlayTable);
     $('#inProgressBtn').click(refreshInPlayTable);
     $('#summaryBtn').click(refreshSummaryTable);
-    
 }
 
 var refreshToPlayTable = function () {
