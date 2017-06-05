@@ -4,28 +4,24 @@
 
 var init = function () {
     initTables();
-    
-    $('#toPlayBtn').click(refreshToPlayTable);
-    $('#inProgressBtn').click(refreshInPlayTable);
-    $('#summaryBtn').click(refreshSummaryTable);
 }
 
-var refreshToPlayTable = function () {
+var refreshToPlayTable = function (authorization) {
     $('#toPlayContainer tbody').unbind();
     $('#toPlayContainer').DataTable().destroy();
-    initToPlayTable();
+    initToPlayTable(authorization);
 }
 
-var refreshInPlayTable = function () {
+var refreshInPlayTable = function (authorization) {
     $('#inPlayContainer tbody').unbind();
     $('#inPlayContainer').DataTable().destroy();
-    initInPlayTable();
+    initInPlayTable(authorization);
 }
 
-var refreshSummaryTable = function () {
+var refreshSummaryTable = function (authorization) {
     $('#summaryContainer tbody').unbind();
     $('#summaryContainer').DataTable().destroy();
-    initSummaryTable();
+    initSummaryTable(authorization);
 }
 
 var drawToPlayTable = function (data) {
@@ -143,13 +139,52 @@ var drawSummaryTable = function (data) {
 }
 
 var initTables = function () {
-    initToPlayTable();
-    initInPlayTable();
-    initSummaryTable();
+    var authorization = getCookie('token');
+    initToPlayTable(authorization);
+    initInPlayTable(authorization);
+    initSummaryTable(authorization);
+    initRefreshes(authorization);
+
+    setInterval(function () {
+        refreshToPlayTable(authorization);
+    }, 60000);
+    setInterval(function () {
+        refreshInPlayTable(authorization);
+    }, 180000);
+    setInterval(function () {
+        refreshSummaryTable(authorization);
+    }, 180000);
 }
 
-var initToPlayTable = function () {
-    var authorization = "Bearer " + localStorage.getItem('token').slice(1, -1);
+var initRefreshes = function (authorization) {
+    $('#toPlayBtn').click(function () {
+        refreshToPlayTable(authorization);
+    });
+    $('#inProgressBtn').click(function () {
+        refreshInPlayTable(authorization);
+    });
+    $('#summaryBtn').click(function () {
+        refreshSummaryTable(authorization);
+    });
+}
+
+var logOut = function () {
+    //niedziala to:
+    //$.ajax({
+    //    type: 'POST',
+    //    url: 'http://localhost:60070/Account/LogOff',
+    //    contentType: 'application/json; charset=utf-8',
+    //    success: function () {
+    //    },
+    //    error: function (xhr, status, error) {
+    //    }
+    //});
+
+    //ani to:
+    //$('#logoutForm > ul > li:nth-child(2)').click();
+}
+
+var initToPlayTable = function (authorization) {
     $.ajax({
         type: 'GET',
         url: 'http://localhost:51740/api/Bet/GetCouponsToPlay',
@@ -161,14 +196,13 @@ var initToPlayTable = function () {
             drawToPlayTable(response);
         },
         error: function (xhr, status, error) {
-
+            logOut();
         }
     });
     initDetailsView(authorization);
 }
 
-var initInPlayTable = function () {
-    var authorization = "Bearer " + localStorage.getItem('token').slice(1, -1);
+var initInPlayTable = function (authorization) {
     $.ajax({
         type: 'GET',
         url: 'http://localhost:51740/api/Bet/GetCouponsInPlay',
@@ -180,13 +214,12 @@ var initInPlayTable = function () {
             drawInPlayTable(response);
         },
         error: function (xhr, status, error) {
-
+            logOut();
         }
     });
 }
 
-var initSummaryTable = function () {
-    var authorization = "Bearer " + localStorage.getItem('token').slice(1, -1);
+var initSummaryTable = function (authorization) {
     $.ajax({
         type: 'GET',
         url: 'http://localhost:51740/api/Bet/GetResolvedCoupons',
@@ -198,7 +231,7 @@ var initSummaryTable = function () {
             drawSummaryTable(response);
         },
         error: function (xhr, status, error) {
-
+            logOut();
         }
     });
 }
