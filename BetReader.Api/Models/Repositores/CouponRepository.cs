@@ -26,7 +26,7 @@ namespace BetReader.Api.Models.Repositores
             return context.Coupons.FirstOrDefault(c => c.Id == id);
         }
 
-        public void Create(Coupon entity)
+        public void Add(Coupon entity)
         {
             context.Coupons.Add(entity);
         }

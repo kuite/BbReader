@@ -8,5 +8,6 @@
         public const string ChromeDriverPath = @"C:\projects\betReader";
         public const int MinimalPicksCount = 50;
         public const double MinimalYield = 0.05;
+        public const string ApiUrl = "http://localhost:51740";
     }
 }

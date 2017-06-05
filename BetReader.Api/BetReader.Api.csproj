@@ -184,6 +184,10 @@
     <Compile Include="Models\Database\Migrations\201705272025414_IndetityUserChanged.Designer.cs">
       <DependentUpon>201705272025414_IndetityUserChanged.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Database\Migrations\201706051642516_Discriminator.cs" />
+    <Compile Include="Models\Database\Migrations\201706051642516_Discriminator.Designer.cs">
+      <DependentUpon>201706051642516_Discriminator.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Database\Migrations\Configuration.cs" />
     <Compile Include="Models\Repositores\AuthRepository.cs" />
     <Compile Include="Models\Repositores\CouponRepository.cs" />
@@ -219,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Models\Database\Migrations\201705272025414_IndetityUserChanged.resx">
       <DependentUpon>201705272025414_IndetityUserChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Database\Migrations\201706051642516_Discriminator.resx">
+      <DependentUpon>201706051642516_Discriminator.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

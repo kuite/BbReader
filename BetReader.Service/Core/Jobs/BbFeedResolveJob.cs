@@ -17,7 +17,7 @@ namespace BetReader.Service.Core.Jobs
     public class BbFeedResolveJob : IJob
     {
         private FeedResolver resolver;
-        private CouponRepository couponRepository;
+        private ApiWrapper couponRepository;
         private UnityContainer container;
 
         public void Execute(IJobExecutionContext context)
@@ -27,18 +27,14 @@ namespace BetReader.Service.Core.Jobs
                 container = (UnityContainer)context.MergedJobDataMap["unityContainer"];
 
                 resolver = new FeedResolver(new HtmlWeb());
-                couponRepository = container.Resolve<CouponRepository>();
+                couponRepository = container.Resolve<ApiWrapper>();
 
                 context.RescheduleJob(59, 60);
 
-                var couponsInPlay = couponRepository.GetAll().Where(c =>
-                    c.IsPlayed &&
-                    c.IsResolved == false).ToList();
-                var resolvedCoupons = resolver.ResolveCoupons(couponsInPlay).ToList();
+                List<Coupon> couponsInPlay = couponRepository.GetCouponsInPlay();
+                List<Coupon> resolvedCoupons = resolver.ResolveCoupons(couponsInPlay).ToList();
 
-                resolvedCoupons.ForEach(c => couponRepository.Update(c));
-                couponRepository.SaveChanges();
-
+                couponRepository.UpdateCoupons(resolvedCoupons);
             }
             catch (JobExecutionException e)
             {

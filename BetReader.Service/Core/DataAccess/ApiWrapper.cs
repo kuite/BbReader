@@ -1,50 +1,45 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using BetReader.Constans;
 using BetReader.Model.Entities;
+using RestSharp;
 
 namespace BetReader.Service.Core.DataAccess
 {
-    public class CouponRepository
+    public class ApiWrapper
     {
         private int id;
-        private readonly BetReaderContext context;
 
-        public CouponRepository(BetReaderContext context)
+        public ApiWrapper()
         {
-            this.context = context;
             id = 8;
         }
 
-        public IQueryable<Coupon> GetAll()
+        public List<Coupon> GetCouponsInPlay()
         {
-            return context.Coupons;
+            throw new NotImplementedException();
         }
 
-        public void Update(Coupon entity)
+        public void UpdateCoupons(List<Coupon> coupons)
         {
-            context.Entry(entity).State = EntityState.Modified;
+            
         }
 
-        public void SaveChanges()
+        public void RefreshToken()
         {
-            context.SaveChanges();
+            var body = string.Format("{{\r\n    Email: \"{0}\",\r\n    Password: \"{1}\"\r\n}}", "admin@wp.pl", "polska12");
+            var client = new RestClient(GlobalConstants.ApiUrl + "/api/Token/GetToken");
+            var postRequest = new RestRequest(Method.POST);
+            postRequest.AddHeader("content-type", "application/json");
+            postRequest.AddParameter("application/json", body, ParameterType.RequestBody);
+            IRestResponse response = client.Execute(postRequest);
         }
 
-        public void AddAsUnique(Coupon coupon)
+        public void AddCouponsToPlay(List<Coupon> coupons)
         {
-            var couponsToPlay = context.Coupons.
-                Where(c => c.IsResolved == false);
-
-            foreach (Coupon toPlay in couponsToPlay)
-            {
-                if (toPlay.Exuals(coupon))
-                {
-                    return;
-                }
-            }
-            context.Coupons.Add(coupon);
-            context.SaveChanges();
+            
         }
 
         public void CreateSeedToConsole(Coupon coupon)
