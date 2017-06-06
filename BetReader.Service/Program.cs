@@ -67,7 +67,7 @@ namespace BetReader.Service
 
             var jobs = new List<IJobDetail>();
             jobs.Add(JobBuilder.Create<BbFeedReadJob>().Build());
-            jobs.Add(JobBuilder.Create<BbFeedResolveJob>().Build());
+//            jobs.Add(JobBuilder.Create<BbFeedResolveJob>().Build());
 
             int counter = 1;
             foreach (IJobDetail job in jobs)
