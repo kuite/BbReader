@@ -36,7 +36,7 @@ namespace BetReader.Api.Models.Services
                 }
             }
 
-            couponRepository.Create(coupon);
+            couponRepository.Add(coupon);
             couponRepository.SaveChanges();
         }
 
@@ -78,12 +78,20 @@ namespace BetReader.Api.Models.Services
 
         public bool AddCoupons(List<Coupon> coupons)
         {
-            foreach (var singleCoupon in coupons)
+            try
             {
-                couponRepository.Create(singleCoupon);
+                foreach (var singleCoupon in coupons)
+                {
+                    AddAsUnique(singleCoupon);
+                }
+                return true;
             }
-            couponRepository.SaveChanges();
-            return true;
+            catch (Exception e)
+            {
+                //log e
+                return false;
+            }
+
         }
 
         public bool UpdateCoupons(List<Coupon> coupons)

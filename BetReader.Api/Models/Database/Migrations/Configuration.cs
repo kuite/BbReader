@@ -489,6 +489,307 @@ namespace BetReader.Api.Models.Database.Migrations
             };
             context.Picks.AddOrUpdate(pick151);
 
+
+            var coupon16 = new Coupon
+            {
+                Id = 16,
+                Author = "Rambo",
+                AddedTime = DateTime.ParseExact("06.06.2017 00:59:06", "dd.MM.yyyy HH:mm:ss", CultureInfo.InvariantCulture),
+                AuthorsPicksCount = 501,
+                AuthorsYield = 0.07,
+                Odds = 1.65,
+                Description = "",
+                CouponUrl = "https://rambinho.blogabet.com/pick/17198866/quilmes-atletico-club-patronato",
+                IsResolved = false,
+                IsWon = false,
+                IsPlayed = false,
+                IsDismissed = false,
+                IsLive = true,
+                AuthorsStake = 3
+            };
+            context.Coupons.AddOrUpdate(coupon16);
+            var pick161 = new Pick
+            {
+                KickOff = DateTime.Now,
+                Odds = 1.65,
+                Event = "Quilmes Atletico Club - Patronato",
+                Selection = "Quilmes Atletico Club - Patronato",
+                SportType = "Football / Livebet",
+                Coupon = coupon16
+            };
+            context.Picks.AddOrUpdate(pick161);
+
+
+            var coupon17 = new Coupon
+            {
+                Id = 17,
+                Author = "Rambo",
+                AddedTime = DateTime.ParseExact("06.06.2017 00:58:56", "dd.MM.yyyy HH:mm:ss", CultureInfo.InvariantCulture),
+                AuthorsPicksCount = 501,
+                AuthorsYield = 0.07,
+                Odds = 2.15,
+                Description = "",
+                CouponUrl = "https://rambinho.blogabet.com/pick/17198865/quilmes-atletico-club-patronato",
+                IsResolved = false,
+                IsWon = false,
+                IsPlayed = false,
+                IsDismissed = false,
+                IsLive = true,
+                AuthorsStake = 3
+            };
+            context.Coupons.AddOrUpdate(coupon17);
+            var pick171 = new Pick
+            {
+                KickOff = DateTime.Now,
+                Odds = 2.15,
+                Event = "Quilmes Atletico Club - Patronato",
+                Selection = "Quilmes Atletico Club - Patronato",
+                SportType = "Football / Livebet",
+                Coupon = coupon17
+            };
+            context.Picks.AddOrUpdate(pick171);
+
+
+            var coupon18 = new Coupon
+            {
+                Id = 18,
+                Author = "kapetan",
+                AddedTime = DateTime.ParseExact("06.06.2017 00:58:27", "dd.MM.yyyy HH:mm:ss", CultureInfo.InvariantCulture),
+                AuthorsPicksCount = 477,
+                AuthorsYield = 0.21,
+                Odds = 1.86,
+                Description = "",
+                CouponUrl = "https://kapetan.blogabet.com/pick/17198802/bucaneros-vs-marinos",
+                IsResolved = false,
+                IsWon = false,
+                IsPlayed = false,
+                IsDismissed = false,
+                IsLive = true,
+                AuthorsStake = 5
+            };
+            context.Coupons.AddOrUpdate(coupon18);
+            var pick181 = new Pick
+            {
+                KickOff = DateTime.Now,
+                Odds = 1.86,
+                Event = "Bucaneros vs Marinos",
+                Selection = "Bucaneros vs Marinos",
+                SportType = "Basketball / Livebet",
+                Coupon = coupon18
+            };
+            context.Picks.AddOrUpdate(pick181);
+
+
+            var coupon19 = new Coupon
+            {
+                Id = 19,
+                Author = "Bernhard",
+                AddedTime = DateTime.ParseExact("06.06.2017 00:57:04", "dd.MM.yyyy HH:mm:ss", CultureInfo.InvariantCulture),
+                AuthorsPicksCount = 113,
+                AuthorsYield = 0.08,
+                Odds = 1.74,
+                Description = "",
+                CouponUrl = "https://bernhard97.blogabet.com/pick/17198846/nashville-predators-pittsburgh-penguins",
+                IsResolved = false,
+                IsWon = false,
+                IsPlayed = false,
+                IsDismissed = false,
+                IsLive = false,
+                AuthorsStake = 2
+            };
+            context.Coupons.AddOrUpdate(coupon19);
+            var pick191 = new Pick
+            {
+                KickOff = DateTime.Now,
+                Odds = 1.74,
+                Event = "Nashville Predators - Pittsburgh Penguins",
+                Selection = "Nashville Predators - Pittsburgh Penguins",
+                SportType = "Ice Hockey / NHL",
+                Coupon = coupon19
+            };
+            context.Picks.AddOrUpdate(pick191);
+
+
+            var coupon20 = new Coupon
+            {
+                Id = 20,
+                Author = "kike25041999",
+                AddedTime = DateTime.ParseExact("06.06.2017 00:56:59", "dd.MM.yyyy HH:mm:ss", CultureInfo.InvariantCulture),
+                AuthorsPicksCount = 58,
+                AuthorsYield = 0.06,
+                Odds = 1.8,
+                Description = "",
+                CouponUrl = "https://quiquesanchezlaserna.blogabet.com/pick/17198842/bahrain-v-palestine",
+                IsResolved = false,
+                IsWon = false,
+                IsPlayed = false,
+                IsDismissed = false,
+                IsLive = false,
+                AuthorsStake = 10
+            };
+            context.Coupons.AddOrUpdate(coupon20);
+            var pick201 = new Pick
+            {
+                KickOff = DateTime.Now,
+                Odds = 1.8,
+                Event = "Bahrain v Palestine",
+                Selection = "Bahrain v Palestine",
+                SportType = "Football / International",
+                Coupon = coupon20
+            };
+            context.Picks.AddOrUpdate(pick201);
+
+
+            var coupon21 = new Coupon
+            {
+                Id = 21,
+                Author = "Bernhard",
+                AddedTime = DateTime.ParseExact("06.06.2017 00:56:46", "dd.MM.yyyy HH:mm:ss", CultureInfo.InvariantCulture),
+                AuthorsPicksCount = 113,
+                AuthorsYield = 0.08,
+                Odds = 2.26,
+                Description = "",
+                CouponUrl = "https://bernhard97.blogabet.com/pick/17198839/los-angeles-dodgers-h-ryu-washington-nationals-g-gonzalez",
+                IsResolved = false,
+                IsWon = false,
+                IsPlayed = false,
+                IsDismissed = false,
+                IsLive = false,
+                AuthorsStake = 2
+            };
+            context.Coupons.AddOrUpdate(coupon21);
+            var pick211 = new Pick
+            {
+                KickOff = DateTime.Now,
+                Odds = 2.26,
+                Event = "Los Angeles Dodgers (H. Ryu) - Washington Nationals (G. Gonzalez)",
+                Selection = "Los Angeles Dodgers (H. Ryu) - Washington Nationals (G. Gonzalez)",
+                SportType = "Baseball / MLB",
+                Coupon = coupon21
+            };
+            context.Picks.AddOrUpdate(pick211);
+
+
+            var coupon22 = new Coupon
+            {
+                Id = 22,
+                Author = "Bernhard",
+                AddedTime = DateTime.ParseExact("06.06.2017 00:56:36", "dd.MM.yyyy HH:mm:ss", CultureInfo.InvariantCulture),
+                AuthorsPicksCount = 113,
+                AuthorsYield = 0.08,
+                Odds = 1.751,
+                Description = "",
+                CouponUrl = "https://bernhard97.blogabet.com/pick/17198838/kansas-city-royals-i-kennedy-houston-astros-m-fiers",
+                IsResolved = false,
+                IsWon = false,
+                IsPlayed = false,
+                IsDismissed = false,
+                IsLive = false,
+                AuthorsStake = 2
+            };
+            context.Coupons.AddOrUpdate(coupon22);
+            var pick221 = new Pick
+            {
+                KickOff = DateTime.Now,
+                Odds = 1.751,
+                Event = "Kansas City Royals (I. Kennedy) - Houston Astros (M. Fiers)",
+                Selection = "Kansas City Royals (I. Kennedy) - Houston Astros (M. Fiers)",
+                SportType = "Baseball / MLB",
+                Coupon = coupon22
+            };
+            context.Picks.AddOrUpdate(pick221);
+
+
+            var coupon23 = new Coupon
+            {
+                Id = 23,
+                Author = "Bernhard",
+                AddedTime = DateTime.ParseExact("06.06.2017 00:56:25", "dd.MM.yyyy HH:mm:ss", CultureInfo.InvariantCulture),
+                AuthorsPicksCount = 113,
+                AuthorsYield = 0.08,
+                Odds = 2.1,
+                Description = "",
+                CouponUrl = "https://bernhard97.blogabet.com/pick/17198837/chicago-cubs-e-butler-miami-marlins-d-straily",
+                IsResolved = false,
+                IsWon = false,
+                IsPlayed = false,
+                IsDismissed = false,
+                IsLive = false,
+                AuthorsStake = 2
+            };
+            context.Coupons.AddOrUpdate(coupon23);
+            var pick231 = new Pick
+            {
+                KickOff = DateTime.Now,
+                Odds = 2.1,
+                Event = "Chicago Cubs (E. Butler) - Miami Marlins (D. Straily)",
+                Selection = "Chicago Cubs (E. Butler) - Miami Marlins (D. Straily)",
+                SportType = "Baseball / MLB",
+                Coupon = coupon23
+            };
+            context.Picks.AddOrUpdate(pick231);
+
+
+            var coupon24 = new Coupon
+            {
+                Id = 24,
+                Author = "kike25041999",
+                AddedTime = DateTime.ParseExact("06.06.2017 00:55:43", "dd.MM.yyyy HH:mm:ss", CultureInfo.InvariantCulture),
+                AuthorsPicksCount = 58,
+                AuthorsYield = 0.06,
+                Odds = 1.8,
+                Description = "",
+                CouponUrl = "https://quiquesanchezlaserna.blogabet.com/pick/17198834/india-v-nepal",
+                IsResolved = false,
+                IsWon = false,
+                IsPlayed = false,
+                IsDismissed = false,
+                IsLive = false,
+                AuthorsStake = 10
+            };
+            context.Coupons.AddOrUpdate(coupon24);
+            var pick241 = new Pick
+            {
+                KickOff = DateTime.Now,
+                Odds = 1.8,
+                Event = "India v Nepal",
+                Selection = "India v Nepal",
+                SportType = "Football / International",
+                Coupon = coupon24
+            };
+            context.Picks.AddOrUpdate(pick241);
+
+
+            var coupon25 = new Coupon
+            {
+                Id = 25,
+                Author = "kike25041999",
+                AddedTime = DateTime.ParseExact("06.06.2017 00:55:15", "dd.MM.yyyy HH:mm:ss", CultureInfo.InvariantCulture),
+                AuthorsPicksCount = 58,
+                AuthorsYield = 0.06,
+                Odds = 1.25,
+                Description = "",
+                CouponUrl = "https://quiquesanchezlaserna.blogabet.com/pick/17198832/india-v-nepal",
+                IsResolved = false,
+                IsWon = false,
+                IsPlayed = false,
+                IsDismissed = false,
+                IsLive = false,
+                AuthorsStake = 10
+            };
+            context.Coupons.AddOrUpdate(coupon25);
+            var pick251 = new Pick
+            {
+                KickOff = DateTime.Now,
+                Odds = 1.25,
+                Event = "India v Nepal",
+                Selection = "India v Nepal",
+                SportType = "Football / International",
+                Coupon = coupon25
+            };
+            context.Picks.AddOrUpdate(pick251);
+
+
             var passwordHash = new PasswordHasher();
             string password = passwordHash.HashPassword("polska12");
             context.Users.AddOrUpdate(u => u.UserName,

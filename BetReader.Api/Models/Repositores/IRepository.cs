@@ -6,7 +6,7 @@ namespace BetReader.Api.Models.Repositores
     {
         IQueryable<T> GetAll();
         T GetById(int id);
-        void Create(T entity);
+        void Add(T entity);
         void Update(T entity);
         void Delete(int id);
         void SaveChanges();

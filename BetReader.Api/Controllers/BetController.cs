@@ -21,34 +21,18 @@ namespace BetReader.Api.Controllers
         public IHttpActionResult GetCouponsInPlay()
         {
             IEnumerable<Coupon> coupons = couponService.GetCouponsInPlay();
-
-            if (coupons == null)
-            {
-                return NotFound();
-            }
-
             return Ok(coupons);
         }
 
         public IHttpActionResult GetCouponsToPlay()
         {
             IEnumerable<Coupon> coupons = couponService.GetCouponsToPlay();
-
-            if (coupons == null)
-            {
-                return NotFound();
-            }
             return Ok(coupons);
         }
 
         public IHttpActionResult GetResolvedCoupons()
         {
             IEnumerable<Coupon> coupons = couponService.GetResolvedCoupons();
-
-            if (coupons == null)
-            {
-                return NotFound();
-            }
             return Ok(coupons);
         }
 
@@ -69,40 +53,43 @@ namespace BetReader.Api.Controllers
         [HttpPost]
         public IHttpActionResult DismissCoupons(List<int> ids)
         {
-            bool success = couponService.DismissCoupons(ids);
-
-            if (success)
+            try
             {
-                return Ok();
+                couponService.DismissCoupons(ids);
             }
-
-            return InternalServerError();
+            catch (Exception e)
+            {
+                return InternalServerError(e.InnerException);
+            }
+            return Ok();
         }
 
         [HttpPost]
         public IHttpActionResult UpdateCoupons(List<Coupon> coupons)
         {
-            bool success = couponService.UpdateCoupons(coupons);
-
-            if (success)
+            try
             {
-                return Ok();
+                couponService.UpdateCoupons(coupons);
             }
-
-            return InternalServerError();
+            catch (Exception e)
+            {
+                return InternalServerError(e.InnerException);
+            }
+            return Ok();
         }
 
         [HttpPost]
         public IHttpActionResult AddCouponsToPlay(List<Coupon> coupons)
         {
-            bool success = couponService.AddCoupons(coupons);
-
-            if (success)
+            try
             {
-                return Ok();
+                couponService.AddCoupons(coupons);
             }
-
-            return InternalServerError();
+            catch (Exception e)
+            {
+                return InternalServerError(e.InnerException);
+            }
+            return Ok();
         }
     }
 }
