@@ -7,6 +7,8 @@ var init = function () {
 }
 
 var refreshToPlayTable = function (authorization) {
+    $('#dismissCoupon').unbind();
+    $('#playCouponBtn').unbind();
     $('#toPlayContainer tbody').unbind();
     $('#toPlayContainer').DataTable().destroy();
     initToPlayTable(authorization);
@@ -169,19 +171,9 @@ var initRefreshes = function (authorization) {
 }
 
 var logOut = function () {
-    //niedziala to:
-    //$.ajax({
-    //    type: 'POST',
-    //    url: 'http://localhost:60070/Account/LogOff',
-    //    contentType: 'application/json; charset=utf-8',
-    //    success: function () {
-    //    },
-    //    error: function (xhr, status, error) {
-    //    }
-    //});
-
-    //ani to:
-    //$('#logoutForm > ul > li:nth-child(2)').click();
+    if (window.location != 'http://localhost:60070/Account/Login?ReturnUrl=%2F') {
+        window.location = 'http://localhost:60070/Account/Login?ReturnUrl=%2F';
+    }
 }
 
 var initToPlayTable = function (authorization) {
