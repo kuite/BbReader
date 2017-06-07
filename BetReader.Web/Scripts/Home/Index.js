@@ -174,7 +174,7 @@ var initRefreshes = function (authorization) {
 }
 
 var logOut = function () {
-    window.location = '/Account/LogOff';
+    window.location = "javascript:document.getElementById('logoutForm').submit()";
 }
 
 var initToPlayTable = function (authorization) {
