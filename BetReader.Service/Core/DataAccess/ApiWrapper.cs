@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using BetReader.Constans;
 using BetReader.Model.Entities;
@@ -14,7 +13,7 @@ namespace BetReader.Service.Core.DataAccess
 
         public ApiWrapper()
         {
-            id = 8;
+            id = 16;
         }
 
         public List<Coupon> GetCouponsInPlay()
@@ -27,7 +26,7 @@ namespace BetReader.Service.Core.DataAccess
             
         }
 
-        public void RefreshToken()
+        private void RefreshToken()
         {
             var body = string.Format("{{\r\n    Email: \"{0}\",\r\n    Password: \"{1}\"\r\n}}", "admin@wp.pl", "polska12");
             var client = new RestClient(GlobalConstants.ApiUrl + "/api/Token/GetToken");
@@ -71,7 +70,7 @@ namespace BetReader.Service.Core.DataAccess
             context.Coupons.AddOrUpdate({13});", 
             couponName, id, coupon.Author, addedTime, coupon.AuthorsPicksCount, 
             yield, odds, coupon.Description, coupon.CouponUrl,
-            "false", "false", "false", "false", couponName, coupon.IsLive, coupon.AuthorsStake);
+            "false", "false", "false", "false", couponName, coupon.IsLive.ToString().ToLower(), coupon.AuthorsStake);
             couponText += Environment.NewLine;
 
             var pickId = 1;

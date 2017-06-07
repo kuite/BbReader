@@ -2,6 +2,9 @@
     init();
 });
 
+
+ApiUrl = 'http://betreaderapi20170606113457.azurewebsites.net/';
+
 var init = function () {
     initTables();
 }
@@ -171,15 +174,13 @@ var initRefreshes = function (authorization) {
 }
 
 var logOut = function () {
-    if (window.location != 'http://localhost:60070/Account/Login?ReturnUrl=%2F') {
-        window.location = 'http://localhost:60070/Account/Login?ReturnUrl=%2F';
-    }
+    window.location = '/Account/LogOff';
 }
 
 var initToPlayTable = function (authorization) {
     $.ajax({
         type: 'GET',
-        url: 'http://localhost:51740/api/Bet/GetCouponsToPlay',
+        url: ApiUrl + 'api/Bet/GetCouponsToPlay',
         headers: {
             authorization: authorization
         },
@@ -197,7 +198,7 @@ var initToPlayTable = function (authorization) {
 var initInPlayTable = function (authorization) {
     $.ajax({
         type: 'GET',
-        url: 'http://localhost:51740/api/Bet/GetCouponsInPlay',
+        url: ApiUrl + 'api/Bet/GetCouponsInPlay',
         headers: {
             authorization: authorization
         },
@@ -214,7 +215,7 @@ var initInPlayTable = function (authorization) {
 var initSummaryTable = function (authorization) {
     $.ajax({
         type: 'GET',
-        url: 'http://localhost:51740/api/Bet/GetResolvedCoupons',
+        url: ApiUrl + 'api/Bet/GetResolvedCoupons',
         headers: {
             authorization: authorization
         },
@@ -299,7 +300,7 @@ var dismissCoupons = function (authorization) {
 
     $.ajax({
         type: 'POST',
-        url: 'http://localhost:51740/api/Bet/DismissCoupons',
+        url: ApiUrl + 'api/Bet/DismissCoupons',
         data: JSON.stringify(couponIds),
         headers: {
             authorization: authorization
@@ -386,7 +387,7 @@ var setAsPlayed = function (authorization) {
     if (couponIds.length != 0) {
         $.ajax({
             type: 'POST',
-            url: 'http://localhost:51740/api/Bet/SetCouponsInProgress',
+            url: ApiUrl + 'api/Bet/SetCouponsInProgress',
             data: JSON.stringify(couponIds),
             headers: {
                 authorization: authorization
