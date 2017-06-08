@@ -23,23 +23,6 @@ namespace BetReader.Api.Models.Services
                 c.IsResolved == false).ToList();
         }
 
-        public void AddAsUnique(Coupon coupon)
-        {
-            var couponsToPlay = couponRepository.GetAll().
-                Where(c => c.IsResolved == false);
-
-            foreach (Coupon toPlay in couponsToPlay)
-            {
-                if (toPlay.Exuals(coupon))
-                {
-                    return;
-                }
-            }
-
-            couponRepository.Add(coupon);
-            couponRepository.SaveChanges();
-        }
-
         public void SetCouponsInProgress(IEnumerable<int> ids)
         {
             foreach (var couponId in ids)
@@ -84,6 +67,7 @@ namespace BetReader.Api.Models.Services
                 {
                     AddAsUnique(singleCoupon);
                 }
+                couponRepository.SaveChanges();
                 return true;
             }
             catch (Exception e)
@@ -101,6 +85,22 @@ namespace BetReader.Api.Models.Services
                 couponRepository.Update(singleCoupon);
             }
             return true;
+        }
+
+        private void AddAsUnique(Coupon coupon)
+        {
+            var couponsToPlay = couponRepository.GetAll().
+                Where(c => c.IsResolved == false);
+
+            foreach (Coupon toPlay in couponsToPlay)
+            {
+                if (toPlay.Exuals(coupon))
+                {
+                    return;
+                }
+            }
+
+            couponRepository.Add(coupon);
         }
     }
 }
