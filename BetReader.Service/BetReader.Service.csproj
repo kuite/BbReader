@@ -102,6 +102,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BetReader.Api\BetReader.Api.csproj">
+      <Project>{9E101036-25AC-4C42-9D48-236622E731E7}</Project>
+      <Name>BetReader.Api</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BetReader.Constans\BetReader.Constans.csproj">
       <Project>{10370A6C-2374-4307-A9A1-E2268BE15B72}</Project>
       <Name>BetReader.Constans</Name>

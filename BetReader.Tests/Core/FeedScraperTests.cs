@@ -20,6 +20,7 @@ namespace BetReader.Tests.Core
     public class FeedScraperTests
     {
         private FeedScraper feedScraper;
+        private string couponFilePath = "C:/projects/BetReader/TestSiteBb/feed.txt";
 
         [SetUp]
         public void Setup()
@@ -33,7 +34,7 @@ namespace BetReader.Tests.Core
             var actualCoupons = feedScraper.GetValuableCoupons(GlobalConstants.LocalBbUrl).Take(5).ToList();
             JArray actualJarray = (JArray) JToken.FromObject(actualCoupons);
 
-            var expectedCoupons = File.ReadAllText("", Encoding.UTF8); //"C:/projects/BetReader/TestSiteBb/feed.txt"
+            var expectedCoupons = File.ReadAllText(couponFilePath, Encoding.UTF8);
             var expectedJson = JsonConvert.SerializeObject(expectedCoupons);
             JArray expectedJarray = JArray.Parse(expectedJson);
 

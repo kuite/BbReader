@@ -22,6 +22,9 @@ namespace BetReader.Tests.Core
     public class FeedResolverTests
     {
         private FeedResolver resolver;
+        private string couponsFilePath = "C:/projects/BetReader/TestSiteBb/coupons.txt";
+        private int expectedWonCoupons = 1;
+        private int expectedLostCoupons = 1;
 
         [SetUp]
         public void SetUp()
@@ -34,7 +37,7 @@ namespace BetReader.Tests.Core
         {
             var wonCoupons = 0;
             var lostCoupons = 0;
-            var unresolvedText = File.ReadAllText("", Encoding.UTF8); //"C:/projects/BetReader/TestSiteBb/coupons.txt"
+            var unresolvedText = File.ReadAllText(couponsFilePath, Encoding.UTF8);
             var unresolvedCoupons = JsonConvert.DeserializeObject<List<Coupon>>(unresolvedText);
 
             var resolvedCoupons = resolver.ResolveCoupons(unresolvedCoupons);
@@ -50,8 +53,8 @@ namespace BetReader.Tests.Core
                 }
             }
 
-            Assert.AreEqual(wonCoupons, 1);
-            Assert.AreEqual(lostCoupons, 1);
+            Assert.AreEqual(wonCoupons, expectedWonCoupons);
+            Assert.AreEqual(lostCoupons, expectedLostCoupons);
         }
     }
 }
