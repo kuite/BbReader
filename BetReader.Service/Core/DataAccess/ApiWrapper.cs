@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using BetReader.Api.Controllers;
 using BetReader.Constans;
 using BetReader.Model.Entities;
 using RestSharp;
