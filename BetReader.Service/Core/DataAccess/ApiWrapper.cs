@@ -7,9 +7,11 @@ using RestSharp;
 
 namespace BetReader.Service.Core.DataAccess
 {
-    public class ApiWrapper
+    public class ApiWrapper : IDataProvider
     {
         private int id;
+
+        private string token;
 
         public ApiWrapper()
         {
@@ -23,22 +25,13 @@ namespace BetReader.Service.Core.DataAccess
 
         public void UpdateCoupons(List<Coupon> coupons)
         {
-            
+            throw new NotImplementedException();
         }
 
-        private void RefreshToken()
-        {
-            var body = string.Format("{{\r\n    Email: \"{0}\",\r\n    Password: \"{1}\"\r\n}}", "admin@wp.pl", "polska12");
-            var client = new RestClient(GlobalConstants.ApiUrl + "/api/Token/GetToken");
-            var postRequest = new RestRequest(Method.POST);
-            postRequest.AddHeader("content-type", "application/json");
-            postRequest.AddParameter("application/json", body, ParameterType.RequestBody);
-            IRestResponse response = client.Execute(postRequest);
-        }
 
         public void AddCouponsToPlay(List<Coupon> coupons)
         {
-            
+            throw new NotImplementedException();
         }
 
         public void CreateSeedToConsole(Coupon coupon)
@@ -99,6 +92,16 @@ namespace BetReader.Service.Core.DataAccess
 
             Console.WriteLine(couponText.Replace("'", "\""));
             id++;
+        }
+
+        private void RefreshToken()
+        {
+            var body = string.Format("{{\r\n    Email: \"{0}\",\r\n    Password: \"{1}\"\r\n}}", "admin@wp.pl", "polska12");
+            var client = new RestClient(GlobalConstants.ApiUrl + "/api/Token/GetToken");
+            var postRequest = new RestRequest(Method.POST);
+            postRequest.AddHeader("content-type", "application/json");
+            postRequest.AddParameter("application/json", body, ParameterType.RequestBody);
+            IRestResponse response = client.Execute(postRequest);
         }
     }
 }

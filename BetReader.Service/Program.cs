@@ -25,7 +25,7 @@ namespace BetReader.Service
 
             container.RegisterType<FeedScraper, FeedScraper>();
             container.RegisterType<BbFeedReadJob, BbFeedReadJob>();
-            container.RegisterType<ApiWrapper, ApiWrapper>(new HierarchicalLifetimeManager());
+            container.RegisterType<IDataProvider, ApiWrapper>(new HierarchicalLifetimeManager());
 
 //                        while (true)
 //                        {

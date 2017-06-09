@@ -85,6 +85,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\DataAccess\IDataProvider.cs" />
     <Compile Include="Core\ILogger.cs" />
     <Compile Include="Core\Jobs\BbFeedReadJob.cs" />
     <Compile Include="Core\Jobs\BbFeedResolveJob.cs" />

@@ -17,7 +17,7 @@ namespace BetReader.Service.Core.Jobs
     public class BbFeedResolveJob : IJob
     {
         private FeedResolver resolver;
-        private ApiWrapper apiWrapper;
+        private IDataProvider apiWrapper;
         private UnityContainer container;
 
         public void Execute(IJobExecutionContext context)
@@ -27,7 +27,7 @@ namespace BetReader.Service.Core.Jobs
                 container = (UnityContainer)context.MergedJobDataMap["unityContainer"];
 
                 resolver = new FeedResolver(new HtmlWeb());
-                apiWrapper = container.Resolve<ApiWrapper>();
+                apiWrapper = container.Resolve<IDataProvider>();
 
                 context.RescheduleJob(59, 60);
 
