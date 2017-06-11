@@ -19,7 +19,7 @@ namespace BetReader.Api.Controllers
             string password = model.Password;
             if (CheckUser(username, password))
             {
-                return JwtManager.GenerateToken(username, 1);
+                return JwtManager.GenerateToken(username, 360);
             }
 
             throw new HttpResponseException(HttpStatusCode.Unauthorized);

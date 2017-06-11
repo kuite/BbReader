@@ -19,7 +19,7 @@ namespace BetReader.Service.Core.DataAccess
 
         public ApiWrapper()
         {
-            id = 8;
+            id = 16;
         }
 
         public List<Coupon> GetCouponsInPlay()
@@ -84,7 +84,7 @@ namespace BetReader.Service.Core.DataAccess
             context.Coupons.AddOrUpdate({13});", 
             couponName, id, coupon.Author, addedTime, coupon.AuthorsPicksCount, 
             yield, odds, coupon.Description, coupon.CouponUrl,
-            "false", "false", "false", "false", couponName, coupon.IsLive, coupon.AuthorsStake);
+            "false", "false", "false", "false", couponName, coupon.IsLive.ToString().ToLower(), coupon.AuthorsStake);
             couponText += Environment.NewLine;
 
             var pickId = 1;
