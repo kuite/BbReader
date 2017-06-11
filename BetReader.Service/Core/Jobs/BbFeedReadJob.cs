@@ -33,7 +33,7 @@ namespace BetReader.Service.Core.Jobs
                 {
                     List<Coupon> coupons = processor.GetValuableCoupons(GlobalConstants.Url).ToList();
 
-//                    apiWrapper.AddCouponsToPlay(coupons);
+                    apiWrapper.AddCouponsToPlay(coupons);
                     foreach (Coupon coupon in coupons)
                     {
                         apiWrapper.CreateSeedToConsole(coupon);

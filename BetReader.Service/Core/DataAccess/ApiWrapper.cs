@@ -9,6 +9,7 @@ using BetReader.Api.Models.Services;
 using BetReader.Constans;
 using BetReader.Model.Entities;
 using Microsoft.Practices.Unity;
+using Newtonsoft.Json;
 using RestSharp;
 
 namespace BetReader.Service.Core.DataAccess
@@ -16,10 +17,12 @@ namespace BetReader.Service.Core.DataAccess
     public class ApiWrapper
     {
         private int id;
+        private string authToken;
 
         public ApiWrapper()
         {
             id = 16;
+            RefreshToken();
         }
 
         public List<Coupon> GetCouponsInPlay()
@@ -27,19 +30,33 @@ namespace BetReader.Service.Core.DataAccess
             var client = new RestClient(GlobalConstants.LocalApiUrl + "/api/Bet/GetCouponsInPlay");
             var getRequest = new RestRequest(Method.GET);
             getRequest.AddHeader("content-type", "application/json");
-            var token = "Bearer " + RefreshToken();
-            getRequest.AddHeader("authorization", token);
+            getRequest.AddHeader("authorization", authToken);
             IRestResponse response = client.Execute(getRequest);
-
-            return new List<Coupon>();
+            if (response.StatusDescription == "InvalidToken")
+            {
+                RefreshToken();
+                return GetCouponsInPlay();
+            }
+            List<Coupon> couponsInPlay = JsonConvert.DeserializeObject<List<Coupon>>(response.Content);
+            return couponsInPlay;
         }
 
         public void UpdateCoupons(List<Coupon> coupons)
         {
-            
+            var client = new RestClient(GlobalConstants.LocalApiUrl + "/api/Bet/UpdateCoupons");
+            var postRequest = new RestRequest(Method.POST);
+            postRequest.AddHeader("content-type", "application/json");
+            postRequest.AddParameter("data", coupons);
+            postRequest.AddHeader("authorization", authToken);
+            IRestResponse response = client.Execute(postRequest);
+            if (response.StatusDescription == "InvalidToken")
+            {
+                RefreshToken();
+                UpdateCoupons(coupons);
+            }
         }
 
-        public string RefreshToken()
+        public void RefreshToken()
         {
             var body = string.Format("{{\r\n    Email: \"{0}\",\r\n    Password: \"{1}\"\r\n}}", "admin@wp.pl", "polska12");
             var client = new RestClient(GlobalConstants.LocalApiUrl + "/api/Token/GetToken");
@@ -47,12 +64,22 @@ namespace BetReader.Service.Core.DataAccess
             postRequest.AddHeader("content-type", "application/json");
             postRequest.AddParameter("application/json", body, ParameterType.RequestBody);
             IRestResponse response = client.Execute(postRequest);
-            return response.Content;
+            authToken = "Bearer " + response.Content.Remove(response.Content.Length - 1).Remove(0, 1);
         }
 
         public void AddCouponsToPlay(List<Coupon> coupons)
         {
-            
+            var client = new RestClient(GlobalConstants.LocalApiUrl + "/api/Bet/AddCouponsToPlay");
+            var postRequest = new RestRequest(Method.POST);
+            postRequest.AddHeader("content-type", "application/json");
+            postRequest.AddParameter("data", coupons);
+            postRequest.AddHeader("authorization", authToken);
+            IRestResponse response = client.Execute(postRequest);
+            if (response.StatusDescription == "InvalidToken")
+            {
+                RefreshToken();
+                AddCouponsToPlay(coupons);
+            }
         }
 
         public void CreateSeedToConsole(Coupon coupon)
