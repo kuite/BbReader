@@ -1,10 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
+using System.Web.Http;
 using BetReader.Api.Controllers;
+using BetReader.Api.Models.Database;
+using BetReader.Api.Models.Repositores;
+using BetReader.Api.Models.Services;
 using BetReader.Constans;
 using BetReader.Model.Entities;
+using Microsoft.Practices.Unity;
 using RestSharp;
 
 namespace BetReader.Service.Core.DataAccess
@@ -20,7 +24,14 @@ namespace BetReader.Service.Core.DataAccess
 
         public List<Coupon> GetCouponsInPlay()
         {
-            throw new NotImplementedException();
+            var client = new RestClient(GlobalConstants.LocalApiUrl + "/api/Bet/GetCouponsInPlay");
+            var getRequest = new RestRequest(Method.GET);
+            getRequest.AddHeader("content-type", "application/json");
+            var token = "Bearer " + RefreshToken();
+            getRequest.AddHeader("authorization", token);
+            IRestResponse response = client.Execute(getRequest);
+
+            return new List<Coupon>();
         }
 
         public void UpdateCoupons(List<Coupon> coupons)
@@ -28,14 +39,15 @@ namespace BetReader.Service.Core.DataAccess
             
         }
 
-        public void RefreshToken()
+        public string RefreshToken()
         {
             var body = string.Format("{{\r\n    Email: \"{0}\",\r\n    Password: \"{1}\"\r\n}}", "admin@wp.pl", "polska12");
-            var client = new RestClient(GlobalConstants.ApiUrl + "/api/Token/GetToken");
+            var client = new RestClient(GlobalConstants.LocalApiUrl + "/api/Token/GetToken");
             var postRequest = new RestRequest(Method.POST);
             postRequest.AddHeader("content-type", "application/json");
             postRequest.AddParameter("application/json", body, ParameterType.RequestBody);
             IRestResponse response = client.Execute(postRequest);
+            return response.Content;
         }
 
         public void AddCouponsToPlay(List<Coupon> coupons)
