@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
+using System.Web.Http;
+using BetReader.Api.Controllers;
+using BetReader.Api.Models.Database;
+using BetReader.Api.Models.Repositores;
+using BetReader.Api.Models.Services;
 using BetReader.Constans;
 using BetReader.Model.Entities;
 using BetReader.Scraper;
@@ -27,23 +32,29 @@ namespace BetReader.Service
             container.RegisterType<BbFeedReadJob, BbFeedReadJob>();
             container.RegisterType<IDataProvider, ApiWrapper>(new HierarchicalLifetimeManager());
 
-//                        while (true)
-//                        {
-//                            var processor = new FeedScraper(new ChromeDriver(GlobalConstants.ChromeDriverPath));
-//                            var couponRepository = container.Resolve<CouponRepository>();
-//            
-//                            using (processor)
-//                            {
-//                                List<Coupon> coupons = processor.GetValuableCoupons().ToList();
-//            
-//                                foreach (Coupon coupon in coupons)
-//                                {
-//                                    couponRepository.CreateSeedToConsole(coupon);
-//                                }
-//                            }
-//            
-//                            Thread.Sleep(new TimeSpan(0, 1, 0));
-//                        }
+            //container.RegisterType<ApiController, BetController>();
+            //container.RegisterType<CouponService, CouponService>();
+            //container.RegisterType<ICouponRepository, CouponRepository>();
+            //container.RegisterType<BetReaderContext, BetReaderContext> ();
+
+//            while (true)
+//            {
+//                //var processor = new FeedScraper(new ChromeDriver(GlobalConstants.ChromeDriverPath));
+//                var wrapper = container.Resolve<ApiWrapper>();
+
+//                wrapper.GetCouponsInPlay();
+////                using (processor)
+////                {
+////                    List<Coupon> coupons = processor.GetValuableCoupons().ToList();
+////
+////                    foreach (Coupon coupon in coupons)
+////                    {
+////                        
+////                    }
+////                }
+
+//                Thread.Sleep(new TimeSpan(0, 1, 0));
+//            }
 
             //            while (true)
             //            {
@@ -67,7 +78,7 @@ namespace BetReader.Service
 
             var jobs = new List<IJobDetail>();
             jobs.Add(JobBuilder.Create<BbFeedReadJob>().Build());
-//            jobs.Add(JobBuilder.Create<BbFeedResolveJob>().Build());
+            jobs.Add(JobBuilder.Create<BbFeedResolveJob>().Build());
 
             int counter = 1;
             foreach (IJobDetail job in jobs)
