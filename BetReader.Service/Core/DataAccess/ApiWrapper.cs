@@ -98,7 +98,7 @@ namespace BetReader.Service.Core.DataAccess
         private void RefreshToken()
         {
             var body = string.Format("{{\r\n    Email: \"{0}\",\r\n    Password: \"{1}\"\r\n}}", "admin@wp.pl", "polska12");
-            var client = new RestClient(GlobalConstants.ApiUrl + "/api/Token/GetToken");
+            var client = new RestClient(GlobalConstants.LocalApiUrl + "/api/Token/GetToken");
             var postRequest = new RestRequest(Method.POST);
             postRequest.AddHeader("content-type", "application/json");
             postRequest.AddParameter("application/json", body, ParameterType.RequestBody);
