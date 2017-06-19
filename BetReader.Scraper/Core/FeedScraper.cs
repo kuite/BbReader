@@ -5,6 +5,7 @@ using BetReader.Constans;
 using BetReader.Model.Entities;
 using BetReader.Scraper.Core.Factories;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.Extensions;
 
 namespace BetReader.Scraper.Core
 {
@@ -19,40 +20,23 @@ namespace BetReader.Scraper.Core
 
         public IEnumerable<Coupon> GetValuableCoupons(string sourceUrl)
         {
+            driver.Navigate().GoToUrl(sourceUrl);
+
             List<Coupon> coupons = new List<Coupon>();
             var couponFactory = new CouponFactory();
-
-            if (driver.Url.Length < 10)
-            {
-                driver.Manage().Timeouts().PageLoad = new TimeSpan(0, 0, 7);
-                try
-                {
-                    driver.Navigate().GoToUrl(sourceUrl);
-                }
-                catch (WebDriverTimeoutException ex)
-                {
-                    ((IJavaScriptExecutor)driver).ExecuteScript("return window.stop();");
-                    Console.WriteLine("Stop loading page forced");
-                }
-            }
 
             IEnumerable<IWebElement> liElements = driver.FindElements(By.TagName("li"));
             List<IWebElement> couponNodes = liElements.Where(e => e.GetAttribute("class").Contains("feed-pick")).ToList();
 
+            var command = "$('.combo-toggle').each(function(index) {" +
+              "$(this).click()" +
+              "});";
+
+            ((IJavaScriptExecutor)driver).ExecuteScript(command);
+
+
             foreach (IWebElement node in couponNodes)
             {
-                //todo: filter here if post is worth to check further
-
-                if (node.Text.Contains("Combo pick"))
-                {
-                    var toggle = node.FindElement(By.ClassName("combo-toggle"));
-                    if (toggle != null && toggle.Text.Contains("Show"))
-                    {
-                        toggle.ScrollToView(driver);
-                        toggle.Click();
-                    }
-                }
-
                 coupons.Add(couponFactory.GetCoupon(node));
             }
 
@@ -70,6 +54,7 @@ namespace BetReader.Scraper.Core
         {
             driver.Close();
             driver.Dispose();
+            Environment.Exit(0);
         }
     }
 }

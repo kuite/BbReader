@@ -37,24 +37,19 @@ namespace BetReader.Service
             //container.RegisterType<ICouponRepository, CouponRepository>();
             //container.RegisterType<BetReaderContext, BetReaderContext> ();
 
-//            while (true)
-//            {
-//                //var processor = new FeedScraper(new ChromeDriver(GlobalConstants.ChromeDriverPath));
-//                var wrapper = container.Resolve<ApiWrapper>();
+            while (true)
+            {
+                var processor = new FeedScraper(new ChromeDriver(GlobalConstants.ChromeDriverPath));
+                var wrapper = container.Resolve<IDataProvider>();
 
-//                wrapper.GetCouponsInPlay();
-////                using (processor)
-////                {
-////                    List<Coupon> coupons = processor.GetValuableCoupons().ToList();
-////
-////                    foreach (Coupon coupon in coupons)
-////                    {
-////                        
-////                    }
-////                }
+                using (processor)
+                {
+                    List<Coupon> coupons = processor.GetValuableCoupons(GlobalConstants.LiveBbUrl).ToList();
+                    wrapper.AddCouponsToPlay(coupons);
+                }
 
-//                Thread.Sleep(new TimeSpan(0, 1, 0));
-//            }
+                Thread.Sleep(new TimeSpan(0, 1, 0));
+            }
 
             //            while (true)
             //            {

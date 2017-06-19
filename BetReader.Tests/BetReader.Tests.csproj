@@ -68,8 +68,8 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Api\BetControllerTests.cs" />
-    <Compile Include="Core\FeedResolverTests.cs" />
-    <Compile Include="Core\FeedScraperTests.cs" />
+    <Compile Include="Scraper\FeedResolverTests.cs" />
+    <Compile Include="Scraper\FeedScraperTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -93,6 +93,9 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Service\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

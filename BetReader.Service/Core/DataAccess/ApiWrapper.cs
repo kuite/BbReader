@@ -16,14 +16,10 @@ namespace BetReader.Service.Core.DataAccess
 {
     public class ApiWrapper : IDataProvider
     {
-        private int id;
         private string authToken;
-
-        private string token;
 
         public ApiWrapper()
         {
-            id = 16;
             RefreshToken();
         }
 
@@ -58,24 +54,16 @@ namespace BetReader.Service.Core.DataAccess
             }
         }
 
-        public void RefreshToken()
-        {
-            var body = string.Format("{{\r\n    Email: \"{0}\",\r\n    Password: \"{1}\"\r\n}}", "admin@wp.pl", "polska12");
-            var client = new RestClient(GlobalConstants.LocalApiUrl + "/api/Token/GetToken");
-            var postRequest = new RestRequest(Method.POST);
-            postRequest.AddHeader("content-type", "application/json");
-            postRequest.AddParameter("application/json", body, ParameterType.RequestBody);
-            IRestResponse response = client.Execute(postRequest);
-            authToken = "Bearer " + response.Content.Remove(response.Content.Length - 1).Remove(0, 1);
-        }
-
         public void AddCouponsToPlay(List<Coupon> coupons)
         {
-            var client = new RestClient(GlobalConstants.LocalApiUrl + "/api/Bet/AddCouponsToPlay");
+            var client = new RestClient(GlobalConstants.LocalApiUrl + "/api/Bet/AddNewCoupons");
             var postRequest = new RestRequest(Method.POST);
+            var json = JsonConvert.SerializeObject(coupons);
+
             postRequest.AddHeader("content-type", "application/json");
-            postRequest.AddParameter("data", coupons);
             postRequest.AddHeader("authorization", authToken);
+            postRequest.AddParameter("application/json", json, ParameterType.RequestBody);
+
             IRestResponse response = client.Execute(postRequest);
             if (response.StatusDescription == "InvalidToken")
             {
@@ -86,6 +74,7 @@ namespace BetReader.Service.Core.DataAccess
 
         public void CreateSeedToConsole(Coupon coupon)
         {
+            var id = 16;
             var couponName = "coupon" + id;
             var addedTime = string.Format(
                 "DateTime.ParseExact('{0}', 'dd.MM.yyyy HH:mm:ss', CultureInfo.InvariantCulture)", coupon.AddedTime);
@@ -152,6 +141,7 @@ namespace BetReader.Service.Core.DataAccess
             postRequest.AddHeader("content-type", "application/json");
             postRequest.AddParameter("application/json", body, ParameterType.RequestBody);
             IRestResponse response = client.Execute(postRequest);
+            authToken = "Bearer " + response.Content.Remove(response.Content.Length - 1).Remove(0, 1);
         }
     }
 }

@@ -25,7 +25,7 @@ namespace BetReader.Model.Entities
         public bool IsLive { get; set; }
         public virtual List<Pick> Picks { get; set; } = new List<Pick>();
 
-        public bool Exuals(Coupon coupon)
+        public bool Equals(Coupon coupon)
         {
             if (coupon.CouponUrl != CouponUrl)
             {
@@ -38,6 +38,21 @@ namespace BetReader.Model.Entities
             }
 
             return true;
+        }
+
+        public override bool Equals(object obj)
+        {
+            //Check for null and compare run-time types.
+            if (obj == null || GetType() != obj.GetType())
+                return false;
+
+            Coupon coupon = (Coupon)obj;
+            return Equals(coupon);
+        }
+
+        public override int GetHashCode()
+        {
+            return Id;
         }
     }
 }

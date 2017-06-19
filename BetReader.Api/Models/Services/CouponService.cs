@@ -59,7 +59,7 @@ namespace BetReader.Api.Models.Services
                 c.IsPlayed).ToList();
         }
 
-        public bool AddCoupons(List<Coupon> coupons)
+        public bool AddCoupons(IEnumerable<Coupon> coupons)
         {
             try
             {
@@ -94,12 +94,11 @@ namespace BetReader.Api.Models.Services
 
             foreach (Coupon toPlay in couponsToPlay)
             {
-                if (toPlay.Exuals(coupon))
+                if (toPlay.Equals(coupon))
                 {
                     return;
                 }
             }
-
             couponRepository.Add(coupon);
         }
     }

@@ -27,17 +27,13 @@ namespace BetReader.Service.Core.Jobs
                 processor = new FeedScraper(new ChromeDriver(GlobalConstants.ChromeDriverPath));
                 apiWrapper = container.Resolve<IDataProvider>();
 
-                context.RescheduleJob(65, 80);
+                context.RescheduleJob(40, 55);
 
                 using (processor)
                 {
                     List<Coupon> coupons = processor.GetValuableCoupons(GlobalConstants.Url).ToList();
 
                     apiWrapper.AddCouponsToPlay(coupons);
-//                    foreach (Coupon coupon in coupons)
-//                    {
-//                        apiWrapper.CreateSeedToConsole(coupon);
-//                    }
                 }
             }
             catch (JobExecutionException e)

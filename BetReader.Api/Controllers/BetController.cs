@@ -79,7 +79,7 @@ namespace BetReader.Api.Controllers
         }
 
         [HttpPost]
-        public IHttpActionResult AddCouponsToPlay(List<Coupon> coupons)
+        public IHttpActionResult AddNewCoupons([FromBody]IEnumerable<Coupon> coupons)
         {
             try
             {
