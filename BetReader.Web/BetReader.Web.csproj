@@ -193,38 +193,17 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
-    <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\UnityResolver.cs" />
-    <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Model\Database\Migrations\201705021908121_AddAuthentication.cs" />
-    <Compile Include="Model\Database\Migrations\201705021908121_AddAuthentication.Designer.cs">
-      <DependentUpon>201705021908121_AddAuthentication.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Database\Migrations\201705131919316_StakeAndIsLiveProperties.cs" />
-    <Compile Include="Model\Database\Migrations\201705131919316_StakeAndIsLiveProperties.Designer.cs">
-      <DependentUpon>201705131919316_StakeAndIsLiveProperties.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Identity\AccountViewModels.cs" />
-    <Compile Include="Model\Identity\ApplicationUser.cs" />
-    <Compile Include="Model\Identity\Providers\ApplicationSignInManager.cs" />
-    <Compile Include="Model\Identity\Providers\CustomOAuthProvider.cs" />
-    <Compile Include="Model\Identity\ManageViewModels.cs" />
-    <Compile Include="Model\Database\BetReaderContext.cs" />
-    <Compile Include="Model\Database\Migrations\201704292236036_InitMigration.cs" />
-    <Compile Include="Model\Database\Migrations\201704292236036_InitMigration.Designer.cs">
-      <DependentUpon>201704292236036_InitMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Database\Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\AccountViewModels.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -505,18 +484,7 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Model\Database\Migrations\201704292236036_InitMigration.resx">
-      <DependentUpon>201704292236036_InitMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Model\Database\Migrations\201705021908121_AddAuthentication.resx">
-      <DependentUpon>201705021908121_AddAuthentication.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Model\Database\Migrations\201705131919316_StakeAndIsLiveProperties.resx">
-      <DependentUpon>201705131919316_StakeAndIsLiveProperties.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BetReader.Model\BetReader.Model.csproj">
+    <ProjectReference Include="..\BetReader.Domain\BetReader.Domain.csproj">
       <Project>{50184761-9448-450D-9DA6-1111AD90B8AF}</Project>
       <Name>BetReader.Model</Name>
     </ProjectReference>

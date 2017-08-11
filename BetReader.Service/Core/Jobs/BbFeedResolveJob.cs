@@ -1,44 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BetReader.Constans;
-using BetReader.Model.Entities;
-using BetReader.Scraper.Core;
-using BetReader.Service.Core.DataAccess;
+using BetReader.DataAccess.Database.Repositores;
+using BetReader.Domain.Entities;
+using BetReader.Domain.Resolvers;
 using HtmlAgilityPack;
 using Microsoft.Practices.Unity;
-using OpenQA.Selenium.Chrome;
+using NLog;
 using Quartz;
 
 namespace BetReader.Service.Core.Jobs
 {
     public class BbFeedResolveJob : IJob
     {
-        private FeedResolver resolver;
-        private IDataProvider apiWrapper;
-        private UnityContainer container;
 
         public void Execute(IJobExecutionContext context)
         {
+            Settings settings = (Settings)context.MergedJobDataMap["settings"];
             try
             {
-                container = (UnityContainer)context.MergedJobDataMap["unityContainer"];
+                UnityContainer container = (UnityContainer)context.MergedJobDataMap["unityContainer"];
 
-                resolver = new FeedResolver(new HtmlWeb());
-                apiWrapper = container.Resolve<IDataProvider>();
+                var resolver = new BbCouponsResolver(new HtmlWeb());
+                var couponRepo = container.Resolve<ICouponRepository>();
 
-                context.RescheduleJob(59, 60);
+                context.RescheduleJob(settings.ResolveMinInterval, settings.ResolveMaxInterval);
 
-                List<Coupon> couponsInPlay = apiWrapper.GetCouponsInPlay();
-                List<Coupon> resolvedCoupons = resolver.ResolveCoupons(couponsInPlay).ToList();
+                List<Coupon> couponsInPlay = couponRepo.GetCouponsInPlay().ToList();
+                IEnumerable<Coupon> resolvedCoupons = resolver.ResolveCoupons(couponsInPlay);
 
-                apiWrapper.UpdateCoupons(resolvedCoupons);
+                couponRepo.UpdateCoupons(resolvedCoupons);
             }
-            catch (JobExecutionException e)
+            catch (JobExecutionException ex)
             {
-                Console.WriteLine(e.Message);
+                var logger = LogManager.GetLogger("errors");
+                logger.Info($"Exception : {ex}");
+                throw;
             }
         }
     }

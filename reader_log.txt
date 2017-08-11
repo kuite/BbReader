@@ -1,0 +1,524 @@
+2017-07-20 19:06:05.1048 : 0 coupons were read.
+2017-07-20 19:07:16.2081 : 0 coupons were read.
+2017-07-20 19:08:46.6915 : 0 coupons were read.
+2017-07-20 19:10:19.5737 : 8 coupons were read.
+2017-07-20 19:10:19.5862 : Coupon was added: ITF; 2,62; https://stake5gold.blogabet.com/pick/17618208/ajla-tomljanovic-tessah-andrianjafitrimo
+2017-07-20 19:10:19.5862 : Coupon was added: ahbh; 1,9; https://ahbh.blogabet.com/pick/17618205/fc-zaria-balti-v-apollon-limassol
+2017-07-20 19:10:19.6012 : Coupon was added: Prosotec; 7,5; https://prosotec.blogabet.com/pick/17616808/dinamo-minsk-v-rabotnicki-skopje
+2017-07-20 19:10:19.6012 : Coupon was added: cheser; 1,76; https://cheser.blogabet.com/pick/17617570/sk-slavia-praha-u19-academia-sport-team-u19
+2017-07-20 19:10:19.6193 : Coupon was added: ONLY CORNER PICKS; 2,35; https://tipicobetting.blogabet.com/pick/17618197/dinamo-brest-sc-rheindorf-altach
+2017-07-20 19:10:19.6193 : Coupon was added: GeniusTips; 1,8; https://thegeniustips.blogabet.com/pick/17614598/torino-v-olginatese
+2017-07-20 19:10:19.6353 : Coupon was added: ONLY CORNER PICKS; 1,98; https://tipicobetting.blogabet.com/pick/17618190/dinamo-brest-sc-rheindorf-altach
+2017-07-20 19:10:19.6448 : Coupon was added: TBA; 1,686; https://tennis-betting-assistant.blogabet.com/pick/17618183/combo-pick
+2017-07-20 19:11:42.7423 : 0 coupons were read.
+2017-07-20 19:12:47.1135 : 0 coupons were read.
+2017-07-20 19:14:23.2371 : 0 coupons were read.
+2017-07-20 19:15:33.4740 : 0 coupons were read.
+2017-07-20 19:17:01.3291 : 0 coupons were read.
+2017-07-20 19:18:19.6862 : 0 coupons were read.
+2017-07-20 19:19:56.5744 : 0 coupons were read.
+2017-07-20 19:22:47.4193 : 0 coupons were read.
+2017-07-20 19:24:00.3877 : 0 coupons were read.
+2017-07-20 19:25:11.5932 : 0 coupons were read.
+2017-07-20 19:26:32.3330 : 0 coupons were read.
+2017-07-20 19:27:53.5382 : 0 coupons were read.
+2017-07-20 19:29:14.6169 : 0 coupons were read.
+2017-07-20 19:30:49.5431 : 0 coupons were read.
+2017-07-20 19:31:55.9067 : 6 coupons were read.
+2017-07-20 19:31:55.9207 : Coupon was added: ahbh; 1,77; https://ahbh.blogabet.com/pick/17618408/maardu-linnameeskond-v-fc-kuressaare
+2017-07-20 19:31:55.9287 : Coupon was added: doko; 1,89; https://doko.blogabet.com/pick/17618405/pfc-levski-sofia-hnk-hajduk-split
+2017-07-20 19:31:55.9287 : Coupon was added: Betomeno; 1,85; https://betomeno.blogabet.com/pick/17618403/glasshoughton-welfare-v-ossett-albion
+2017-07-20 19:31:55.9423 : Coupon was added: Sterling; 0; https://sterling.blogabet.com/pick/17618394/zaria-balti-n-apollon-limassol
+2017-07-20 19:31:55.9423 : Coupon was added: Varbev; 2,31; https://varbev.blogabet.com/pick/17618382/pfc-levski-sofia-hnk-hajduk-split
+2017-07-20 19:31:55.9553 : Coupon was added: Sterling; 0; https://sterling.blogabet.com/pick/17618380/zaria-balti-n-apollon-limassol
+2017-07-20 19:33:02.2696 : 0 coupons were read.
+2017-07-20 19:34:06.9924 : 0 coupons were read.
+2017-07-20 19:35:14.9122 : 0 coupons were read.
+2017-07-20 19:36:52.2651 : 0 coupons were read.
+2017-07-20 19:38:01.8009 : 0 coupons were read.
+2017-07-20 19:40:34.3135 : 0 coupons were read.
+2017-07-20 19:41:35.6264 : 0 coupons were read.
+2017-07-20 19:43:11.4786 : 0 coupons were read.
+2017-07-20 19:44:29.2688 : 0 coupons were read.
+2017-07-20 19:46:08.9736 : 0 coupons were read.
+2017-07-20 19:47:40.4811 : 0 coupons were read.
+2017-07-20 19:49:10.4779 : 0 coupons were read.
+2017-07-20 19:50:20.3310 : 0 coupons were read.
+2017-07-20 19:51:31.0781 : 16 coupons were read.
+2017-07-20 19:51:31.0907 : Coupon was added: Beautiful Football; 2; https://beautifulfootball.blogabet.com/pick/17618605/lech-poznan-v-haugesund
+2017-07-20 19:51:31.0967 : Coupon was added: Suspicious Game Bettings; 1,7; https://samvaluetuna.blogabet.com/pick/17618113/olimpia-balti-zaria-apollon-limmassol-fc
+2017-07-20 19:51:31.0967 : Coupon was added: ITF; 3; https://stake5gold.blogabet.com/pick/17618585/alexandra-dulgheru-v-ekaterina-alexandrova
+2017-07-20 19:51:31.0967 : Coupon was added: PolandLive; 10; https://ciechan8818.blogabet.com/pick/17618583/maardu-linnameeskond-v-fc-kuressaare
+2017-07-20 19:51:31.1168 : Coupon was added: Astrotips; 2,02; https://astrotips.blogabet.com/pick/17618580/montenegro-u20-slovenia-u20
+2017-07-20 19:51:31.1168 : Coupon was added: ITF; 2,25; https://stake5gold.blogabet.com/pick/17618579/alexandra-dulgheru-v-ekaterina-alexandrova
+2017-07-20 19:51:31.1293 : Coupon was added: ITF; 4,33; https://stake5gold.blogabet.com/pick/17618575/alexandra-dulgheru-v-ekaterina-alexandrova
+2017-07-20 19:51:31.1293 : Coupon was added: beerbrewer; 1,67; https://beerbrewer.blogabet.com/pick/17618553/skenderbeu-korce-kairat-almaty
+2017-07-20 19:51:31.1293 : Coupon was added: Astrotips; 1,87; https://astrotips.blogabet.com/pick/17618573/montenegro-u20-slovenia-u20
+2017-07-20 19:51:31.1468 : Coupon was added: typy-bukmacherskie; 4; https://typy-bukmacherskie.blogabet.com/pick/17618572/netherlands-w-denmark-w
+2017-07-20 19:51:31.1468 : Coupon was added: typy-bukmacherskie; 6; https://typy-bukmacherskie.blogabet.com/pick/17618569/netherlands-w-denmark-w
+2017-07-20 19:51:31.1588 : Coupon was added: Beautiful Football; 1,83; https://beautifulfootball.blogabet.com/pick/17618568/jagiellonia-bialystok-v-fk-qabala
+2017-07-20 19:51:31.1588 : Coupon was added: Kralj Kocke; 1,8; https://gambleboyzg.blogabet.com/pick/17618563/estonia-vs-spain
+2017-07-20 19:51:31.1588 : Coupon was added: Astrotips; 1,94; https://astrotips.blogabet.com/pick/17618556/greece-u20-lithuania-u20
+2017-07-20 19:51:31.1809 : Coupon was added: jogja79; 2,19; https://jogja79.blogabet.com/pick/17618555/fc-utrecht-n-valleta-fc
+2017-07-20 19:51:31.1809 : Coupon was added: picksestrellas; 2; https://picksestrellas.blogabet.com/pick/17618542/neil-robertson-marco-fu
+2017-07-20 19:52:54.3612 : 0 coupons were read.
+2017-07-20 19:54:11.3288 : 0 coupons were read.
+2017-07-20 19:55:18.0215 : 0 coupons were read.
+2017-07-20 19:56:45.7564 : 0 coupons were read.
+2017-07-20 19:58:08.2201 : 0 coupons were read.
+2017-07-20 19:59:20.4572 : 0 coupons were read.
+2017-07-20 20:18:03.6586 : 9 coupons were read.
+2017-07-20 20:18:04.3454 : Coupon was added: jogja79; 1,8; https://jogja79.blogabet.com/pick/17618838/ac-sparta-praha-vitesse-arnhem
+2017-07-20 20:18:04.3549 : Coupon was added: Wayward P; 1,7; https://waywardp.blogabet.com/pick/17618830/go-soeda-v-marcos-giron
+2017-07-20 20:18:04.3625 : Coupon was added: betdeath; 1,67; https://betdeath.blogabet.com/pick/17618829/panathinaikos-v-az
+2017-07-20 20:18:04.3850 : Coupon was added: Suspicious Game Bettings; 1,7; https://samvaluetuna.blogabet.com/pick/17618113/olimpia-balti-zaria-apollon-limmassol-fc
+2017-07-20 20:18:04.3951 : Coupon was added: Wayward P; 2,62; https://waywardp.blogabet.com/pick/17618821/galatasaray-v-ostersunds-fk
+2017-07-20 20:18:04.3951 : Coupon was added: anelka9393; 1,72; https://anelka9393.blogabet.com/pick/17618815/fc-zaria-balti-v-apollon-limassol
+2017-07-20 20:18:04.4141 : Coupon was added: Wayward P; 2,1; https://waywardp.blogabet.com/pick/17618804/trakai-v-ifk-norrkoping
+2017-07-20 20:18:04.4141 : Coupon was added: ITF; 4,33; https://stake5gold.blogabet.com/pick/17618802/alexandra-dulgheru-v-ekaterina-alexandrova
+2017-07-20 20:18:04.4307 : Coupon was added: TJ Tipster; 3,5; https://tjtipster.blogabet.com/pick/17618800/greece-u20-vs-lithuania-u20
+2017-07-20 20:19:12.3947 : 9 coupons were read.
+2017-07-20 20:20:07.5937 : 0 coupons were read.
+2017-07-20 20:21:36.1420 : 14 coupons were read.
+2017-07-20 20:21:36.1541 : Coupon was added: Moriarty77; 2; https://moriarty77.blogabet.com/pick/17618883/ronse-v-ksv-oudenaarde
+2017-07-20 20:21:36.1601 : Coupon was added: RumBet; 5; https://rumbet.blogabet.com/pick/17618881/cs-fola-esch-v-inter-baku
+2017-07-20 20:21:36.1601 : Coupon was added: betdeath; 1,83; https://betdeath.blogabet.com/pick/17618875/estonia-v-spain
+2017-07-20 20:21:36.1601 : Coupon was added: halipar; 1,85; https://halipar.blogabet.com/pick/17618872/la-nucia-v-levante
+2017-07-20 20:21:36.1791 : Coupon was added: Wayward P; 1,4; https://waywardp.blogabet.com/pick/17618870/jc-aragone-v-peter-polansky
+2017-07-20 20:21:36.1791 : Coupon was added: Conscious; 2,82; https://conscious.blogabet.com/pick/17618868/harrison-adams-ricardo-rodriguez-pace
+2017-07-20 20:21:36.1907 : Coupon was added: TomTucker; 1,94; https://tomtucker.blogabet.com/pick/17618867/cd-la-nucia-levante
+2017-07-20 20:21:36.1907 : Coupon was added: Suspicious Game Bettings; 1,7; https://samvaluetuna.blogabet.com/pick/17618113/olimpia-balti-zaria-apollon-limmassol-fc
+2017-07-20 20:21:36.1907 : Coupon was added: PolandLive; 2,37; https://ciechan8818.blogabet.com/pick/17618864/lech-poznan-v-haugesund
+2017-07-20 20:21:36.2137 : Coupon was added: halipar; 1,8; https://halipar.blogabet.com/pick/17618862/fc-emmen-v-kvv-quick-1920-oldenzaal
+2017-07-20 20:21:36.2222 : Coupon was added: Conscious; 11,5; https://conscious.blogabet.com/pick/17618861/harrison-adams-ricardo-rodriguez-pace
+2017-07-20 20:21:36.2222 : Coupon was added: kuhho; 2,94; https://kuhho.blogabet.com/pick/17618859/nk-domzale-valur-reykjavik
+2017-07-20 20:21:36.2378 : Coupon was added: Moriarty77; 1,649; https://moriarty77.blogabet.com/pick/17618857/galatasaray-ostersunds-fk
+2017-07-20 20:21:36.2378 : Coupon was added: Pablo Escobar; 9,5; https://escobartips.blogabet.com/pick/17618853/fc-utrecht-v-valletta
+2017-07-20 20:23:01.3466 : 14 coupons were read.
+2017-07-20 20:24:17.4832 : 14 coupons were read.
+2017-07-20 20:25:34.1634 : 10 coupons were read.
+2017-07-20 20:25:34.1765 : Coupon was added: Pablo Escobar; 2,87; https://escobartips.blogabet.com/pick/17618937/botev-plovdiv-v-beitar-jerusalem
+2017-07-20 20:25:34.1765 : Coupon was added: 100 DUROS; 1,53; https://therock83.blogabet.com/pick/17618935/sc-farense-v-sheff-wed
+2017-07-20 20:25:34.1765 : Coupon was added: mepalone; 3,25; https://mepalone.blogabet.com/pick/17618932/gastao-elias-v-botic-van-de-zandschulp
+2017-07-20 20:25:34.1946 : Coupon was added: betdeath; 1,61; https://betdeath.blogabet.com/pick/17618925/brazil-women-v-belgium-women
+2017-07-20 20:25:34.1946 : Coupon was added: alakazam13; 1,819; https://alakazam13_betblog.blogabet.com/pick/17618921/galatasaray-ostersunds-fk
+2017-07-20 20:25:34.2081 : Coupon was added: zibi1973; 1,92; https://zibi1973.blogabet.com/pick/17618916/mt-gambier-pioneers-albury-wodonga-bandits
+2017-07-20 20:25:34.2081 : Coupon was added: misimovic; 2,8; https://misimovic.blogabet.com/pick/17618914/galatasaray-sk-ostersunds-fk
+2017-07-20 20:25:34.2081 : Coupon was added: slovenianmonster; 0; https://slovenianmonster.blogabet.com/pick/17618907/domzale-valur-reykjavik
+2017-07-20 20:25:34.2247 : Coupon was added: 100 DUROS; 1,9; https://therock83.blogabet.com/pick/17618906/lech-poznan-v-haugesund
+2017-07-20 20:25:34.2247 : Coupon was added: halipar; 1,85; https://halipar.blogabet.com/pick/17618872/la-nucia-v-levante
+2017-07-20 20:26:43.7531 : 10 coupons were read.
+2017-07-20 20:28:03.0329 : 10 coupons were read.
+2017-07-20 20:29:22.5114 : 10 coupons were read.
+2017-07-20 20:36:20.4096 : 0 coupons were read.
+2017-07-20 20:38:06.1211 : 13 coupons were read.
+2017-07-20 20:38:06.1364 : Coupon was added: Suspicious Game Bettings; 1,7; https://samvaluetuna.blogabet.com/pick/17618113/olimpia-balti-zaria-apollon-limmassol-fc
+2017-07-20 20:38:06.1448 : Coupon was added: TJ Tipster; 4; https://tjtipster.blogabet.com/pick/17619018/greece-u20-vs-lithuania-u20
+2017-07-20 20:38:06.1448 : Coupon was added: RMCF_TIPS; 1,8; https://rmcf_tips.blogabet.com/pick/17619017/la-nucia-v-levante
+2017-07-20 20:38:06.1584 : Coupon was added: nuno teix; 1,95; https://nunco.blogabet.com/pick/17619016/newry-city-v-glenavon
+2017-07-20 20:38:06.1584 : Coupon was added: typy-bukmacherskie; 3,75; https://typy-bukmacherskie.blogabet.com/pick/17619013/kenny-de-schepper-alessandro-giannessi
+2017-07-20 20:38:06.1584 : Coupon was added: janigami; 1,917; https://janigami.blogabet.com/pick/17619010/ac-sparta-praha-vitesse-arnhem
+2017-07-20 20:38:06.1809 : Coupon was added: typy-bukmacherskie; 6,4; https://typy-bukmacherskie.blogabet.com/pick/17619006/peter-gojowczyk-ivo-karlovic
+2017-07-20 20:38:06.1809 : Coupon was added: Moriarty77; 2,6; https://moriarty77.blogabet.com/pick/17619004/odd-bk-v-fc-vaduz
+2017-07-20 20:38:06.1950 : Coupon was added: BET PUMP OFFICIAL; 2,1; https://betpump.blogabet.com/pick/17619002/sk-brann-v-mfk-ruzomberok
+2017-07-20 20:38:06.1950 : Coupon was added: TJ Tipster; 4,33; https://tjtipster.blogabet.com/pick/17619000/montenegro-u20-vs-slovenia-u20
+2017-07-20 20:38:06.2085 : Coupon was added: typy-bukmacherskie; 19,296; https://typy-bukmacherskie.blogabet.com/pick/17618994/combo-pick
+2017-07-20 20:38:06.2085 : Coupon was added: BET PUMP OFFICIAL; 1,8; https://betpump.blogabet.com/pick/17618992/odd-bk-v-fc-vaduz
+2017-07-20 20:38:06.2215 : Coupon was added: mepalone; 1,61; https://mepalone.blogabet.com/pick/17618990/go-soeda-v-marcos-giron
+2017-07-20 20:39:10.4535 : 13 coupons were read.
+2017-07-20 20:40:15.6666 : 0 coupons were read.
+2017-07-20 20:41:59.2386 : 9 coupons were read.
+2017-07-20 20:41:59.2386 : Coupon was added: typy-bukmacherskie; 15,445; https://typy-bukmacherskie.blogabet.com/pick/17619050/combo-pick
+2017-07-20 20:41:59.2577 : Coupon was added: Maddux; 2,24; https://mtk-fortis.blogabet.com/pick/17619048/videoton-fehervar-nomme-kalju
+2017-07-20 20:41:59.2577 : Coupon was added: typy-bukmacherskie; 3,617; https://typy-bukmacherskie.blogabet.com/pick/17619044/combo-pick
+2017-07-20 20:41:59.2702 : Coupon was added: Suspicious Game Bettings; 1,7; https://samvaluetuna.blogabet.com/pick/17618113/olimpia-balti-zaria-apollon-limmassol-fc
+2017-07-20 20:41:59.2702 : Coupon was added: janigami; 1,917; https://janigami.blogabet.com/pick/17619010/ac-sparta-praha-vitesse-arnhem
+2017-07-20 20:41:59.2702 : Coupon was added: TYRAN KLOCUH; 6,5; https://tyran-klocuh.blogabet.com/pick/17619033/bnei-yehuda-v-as-trencin
+2017-07-20 20:41:59.2877 : Coupon was added: Ignazio; 1,6; https://ignazio.blogabet.com/pick/17619031/donskoy-evgeny-gerasimov-egor
+2017-07-20 20:41:59.2877 : Coupon was added: Valdemar92; 2,98; https://footnice.blogabet.com/pick/17618961/benfica-real-betis
+2017-07-20 20:41:59.2993 : Coupon was added: Bet4Green; 1,57; https://cascaryverdear.blogabet.com/pick/17619022/jagiellonia-bialystok-v-fk-qabala
+2017-07-20 20:43:10.7773 : 9 coupons were read.
+2017-07-20 20:44:12.2912 : 0 coupons were read.
+2017-07-20 20:45:26.1596 : 0 coupons were read.
+2017-07-20 20:46:46.9544 : 0 coupons were read.
+2017-07-20 20:48:22.0763 : 0 coupons were read.
+2017-07-20 20:49:54.5593 : 0 coupons were read.
+2017-07-20 20:51:30.7435 : 7 coupons were read.
+2017-07-20 20:51:30.7550 : Coupon was added: NickTeam; 1,95; https://nikyxeddu.blogabet.com/pick/17619128/mladost-podgorica-v-sk-sturm-graz
+2017-07-20 20:51:30.7550 : Coupon was added: halipar; 1,85; https://halipar.blogabet.com/pick/17618872/la-nucia-v-levante
+2017-07-20 20:51:30.7696 : Coupon was added: Pablo Escobar; 1,83; https://escobartips.blogabet.com/pick/17619121/greece-u20-vs-lithuania-u20
+2017-07-20 20:51:30.7696 : Coupon was added: Suspicious Game Bettings; 1,7; https://samvaluetuna.blogabet.com/pick/17618113/olimpia-balti-zaria-apollon-limmassol-fc
+2017-07-20 20:51:30.7696 : Coupon was added: ITF; 2,25; https://stake5gold.blogabet.com/pick/17619115/tatachar-venugopal-dhruthi-lee-hua-chen
+2017-07-20 20:51:30.7901 : Coupon was added: mepalone; 3; https://mepalone.blogabet.com/pick/17619105/gastao-elias-v-botic-van-de-zandschulp
+2017-07-20 20:51:30.7901 : Coupon was added: TYRAN KLOCUH; 6,5; https://tyran-klocuh.blogabet.com/pick/17619033/bnei-yehuda-v-as-trencin
+2017-07-20 20:52:59.1370 : 0 coupons were read.
+2017-07-20 20:54:16.9707 : 7 coupons were read.
+2017-07-20 20:55:37.3120 : 7 coupons were read.
+2017-07-20 20:56:56.0909 : 8 coupons were read.
+2017-07-20 20:56:56.1048 : Coupon was added: Wayward P; 1,53; https://waywardp.blogabet.com/pick/17619175/holland-women-v-denmark-women
+2017-07-20 20:56:56.1119 : Coupon was added: CosaNostra; 2,35; https://lacosanostrasicily.blogabet.com/pick/17619173/birkirkara-v-pieta-hotspurs
+2017-07-20 20:56:56.1119 : Coupon was added: Conscious; 5; https://conscious.blogabet.com/pick/17619171/bulgaria-u20-women-v-usa-u20-women
+2017-07-20 20:56:56.1119 : Coupon was added: TJ Tipster; 3,5; https://tjtipster.blogabet.com/pick/17619167/greece-u20-vs-lithuania-u20
+2017-07-20 20:56:56.1354 : Coupon was added: Wayward P; 1,33; https://waywardp.blogabet.com/pick/17619163/holland-women-v-denmark-women
+2017-07-20 20:56:56.1429 : Coupon was added: TJ Tipster; 3,25; https://tjtipster.blogabet.com/pick/17619159/montenegro-u20-vs-slovenia-u20
+2017-07-20 20:56:56.1429 : Coupon was added: Maddux; 2,75; https://mtk-fortis.blogabet.com/pick/17619158/kr-reykjavik-maccabi-tel-aviv
+2017-07-20 20:56:56.1585 : Coupon was added: Maddux; 2,38; https://mtk-fortis.blogabet.com/pick/17619151/videoton-fehervar-nomme-kalju
+2017-07-20 20:57:52.6779 : 0 coupons were read.
+2017-07-20 20:59:12.6781 : 0 coupons were read.
+2017-07-20 21:00:38.5091 : 0 coupons were read.
+2017-07-20 21:01:43.7221 : 0 coupons were read.
+2017-07-20 21:03:17.1401 : 8 coupons were read.
+2017-07-20 21:03:17.1546 : Coupon was added: woodworm; 2,15; https://woodworm.blogabet.com/pick/17619238/burgess-hill-town-v-whitehawk
+2017-07-20 21:03:17.1617 : Coupon was added: nuno teix; 2,4; https://nunco.blogabet.com/pick/17619230/holland-women-v-denmark-women
+2017-07-20 21:03:17.1617 : Coupon was added: Breeze; 2,45; https://iperfect.blogabet.com/pick/17619228/netherlands-w-denmark-w
+2017-07-20 21:03:17.1742 : Coupon was added: ahbh; 2,37; https://ahbh.blogabet.com/pick/17619218/galatasaray-v-ostersunds-fk
+2017-07-20 21:03:17.1742 : Coupon was added: Jaynash; 2,37; https://jotavaluepicks.blogabet.com/pick/17619217/birkirkara-v-pieta-hotspurs
+2017-07-20 21:03:17.1742 : Coupon was added: betdeath; 2,1; https://betdeath.blogabet.com/pick/17619212/brazil-women-v-belgium-women
+2017-07-20 21:03:17.1927 : Coupon was added: BettingProJPN; 0; https://bettingprojpn.blogabet.com/pick/17619210/matsumoto-yamaga-ehime
+2017-07-20 21:03:17.1927 : Coupon was added: Breeze; 3,48; https://iperfect.blogabet.com/pick/17619203/mladost-podgorica-n-sturm-graz
+2017-07-20 21:04:49.1871 : 8 coupons were read.
+2017-07-20 21:05:53.7849 : 0 coupons were read.
+2017-07-20 21:07:28.3097 : 6 coupons were read.
+2017-07-20 21:07:28.3228 : Coupon was added: BettingProJPN; 1,98; https://bettingprojpn.blogabet.com/pick/17619255/tokyo-verdy-kamatamare-sanuki
+2017-07-20 21:07:28.3228 : Coupon was added: Varbev; 2,1; https://varbev.blogabet.com/pick/17619251/galatasaray-corners-ostersunds-fk-corners
+2017-07-20 21:07:28.3388 : Coupon was added: woodworm; 1,87; https://woodworm.blogabet.com/pick/17619250/taunton-town-v-exeter
+2017-07-20 21:08:48.0295 : 6 coupons were read.
+2017-07-20 21:10:21.2629 : 6 coupons were read.
+2017-07-20 21:11:46.0794 : 0 coupons were read.
+2017-07-20 21:13:02.6998 : 11 coupons were read.
+2017-07-20 21:13:02.7144 : Coupon was added: Breeze; 2,03; https://iperfect.blogabet.com/pick/17619293/siroki-brijeg-aberdeen
+2017-07-20 21:13:02.7144 : Coupon was added: Astrotips; 1,952; https://astrotips.blogabet.com/pick/17619292/la-sparks-chicago-sky
+2017-07-20 21:13:02.7259 : Coupon was added: Astrotips; 1,93; https://astrotips.blogabet.com/pick/17619284/los-angeles-sparks-chicago-sky
+2017-07-20 21:13:02.7259 : Coupon was added: nuno teix; 2,4; https://nunco.blogabet.com/pick/17619230/holland-women-v-denmark-women
+2017-07-20 21:13:02.7455 : Coupon was added: TomTucker; 2,07; https://tomtucker.blogabet.com/pick/17619279/videoton-v-jk-nomme-kalju
+2017-07-20 21:13:02.7545 : Coupon was added: BetsBangladesch; 3,1; https://betsbangladesch.blogabet.com/pick/17619278/galatasaray-v-ostersunds-fk
+2017-07-20 21:13:02.7545 : Coupon was added: anelka9393; 4; https://anelka9393.blogabet.com/pick/17619276/newry-city-v-glenavon
+2017-07-20 21:13:02.7735 : Coupon was added: Bet47tips; 9; https://vipgoldtips.blogabet.com/pick/17619274/holland-women-v-denmark-women
+2017-07-20 21:14:06.2654 : 11 coupons were read.
+2017-07-20 21:15:08.2422 : 11 coupons were read.
+2017-07-20 21:16:23.0858 : 12 coupons were read.
+2017-07-20 21:16:23.1014 : Coupon was added: ollandos; 1,7; https://ollandos4.blogabet.com/pick/17619326/galatasaray-v-ostersunds-fk
+2017-07-20 21:16:23.1014 : Coupon was added: Jaynash; 1,8; https://jotavaluepicks.blogabet.com/pick/17619319/burkina-faso-u21-vs-fyr-macedonia-u21
+2017-07-20 21:16:23.1184 : Coupon was added: Varbev; 3,22; https://varbev.blogabet.com/pick/17619315/galatasaray-ostersunds-fk
+2017-07-20 21:16:23.1184 : Coupon was added: Dominikos; 1,95; https://dominikos.blogabet.com/pick/17619308/holland-women-v-denmark-women
+2017-07-20 21:16:23.1359 : Coupon was added: RMCF_TIPS; 1,7; https://rmcf_tips.blogabet.com/pick/17619310/holland-women-v-denmark-women
+2017-07-20 21:17:55.5054 : 0 coupons were read.
+2017-07-20 21:19:12.1940 : 12 coupons were read.
+2017-07-20 21:20:37.1400 : 12 coupons were read.
+2017-07-20 21:22:11.4766 : 0 coupons were read.
+2017-07-20 21:23:45.7833 : 0 coupons were read.
+2017-07-20 21:25:08.1738 : 10 coupons were read.
+2017-07-20 21:25:08.1878 : Coupon was added: Pobednik; 1,93; https://pobednik.blogabet.com/pick/17619356/fk-red-star-belgrade-crvena-zvezda-irtysch-pavlodar
+2017-07-20 21:25:08.1948 : Coupon was added: cybersport; 0; https://cybersport.blogabet.com/pick/17619354/beacon-pnda
+2017-07-20 21:25:08.1948 : Coupon was added: cybersport; 0; https://cybersport.blogabet.com/pick/17619349/subtle-blight
+2017-07-20 21:25:08.2094 : Coupon was added: sponsio; 0; https://sp0222.blogabet.com/pick/17619347/anzhi-makhachkala-amkar
+2017-07-20 21:25:08.2094 : Coupon was added: cybersport; 0; https://cybersport.blogabet.com/pick/17619345/rise-nation-ronin
+2017-07-20 21:25:08.2234 : Coupon was added: cybersport; 0; https://cybersport.blogabet.com/pick/17619340/district-7-eanix
+2017-07-20 21:25:08.2234 : Coupon was added: Prosotec; 4; https://prosotec.blogabet.com/pick/17619334/skenderbeu-v-kairat-almaty
+2017-07-20 21:25:08.2389 : Coupon was added: anelka9393; 7,5; https://anelka9393.blogabet.com/pick/17619332/galatasaray-v-ostersunds-fk
+2017-07-20 21:25:08.2389 : Coupon was added: Prosotec; 2,2; https://prosotec.blogabet.com/pick/17619331/skenderbeu-v-kairat-almaty
+2017-07-20 21:26:14.8760 : 10 coupons were read.
+2017-07-20 21:27:51.0298 : 8 coupons were read.
+2017-07-20 21:27:51.0458 : Coupon was added: vk128; 5; https://vk128bit.blogabet.com/pick/17619413/mexico-honduras
+2017-07-20 21:27:51.0548 : Coupon was added: Nieve; 1,85; https://niebets.blogabet.com/pick/17619405/burkina-faso-u21-vs-fyr-macedonia-u21
+2017-07-20 21:27:51.0548 : Coupon was added: Thor the Hedgehog; 1,69; https://noddles.blogabet.com/pick/17619393/videoton-jk-nomme-kalju
+2017-07-20 21:27:51.0683 : Coupon was added: penal7; 13; https://penal7.blogabet.com/pick/17619387/fichajes
+2017-07-20 21:27:51.0683 : Coupon was added: mepalone; 1,9; https://mepalone.blogabet.com/pick/17619381/alexandra-dulgheru-v-ekaterina-alexandrova
+2017-07-20 21:27:51.0869 : Coupon was added: @Danibets1; 4,185; https://danibets1977.blogabet.com/pick/17619377/combo-pick
+2017-07-20 21:27:51.0869 : Coupon was added: BET PUMP OFFICIAL; 1,83; https://betpump.blogabet.com/pick/17619376/sc-farense-v-sheff-wed
+2017-07-20 21:27:51.1079 : Coupon was added: BET PUMP OFFICIAL; 1,53; https://betpump.blogabet.com/pick/17619374/ael-limassol-v-progres-niederkorn
+2017-07-20 21:29:26.1823 : 8 coupons were read.
+2017-07-20 21:30:39.8004 : 0 coupons were read.
+2017-07-20 21:31:58.0864 : 0 coupons were read.
+2017-07-20 21:33:39.4108 : 12 coupons were read.
+2017-07-20 21:33:39.4258 : Coupon was added: Skandalas; 2,04; https://skandalas.blogabet.com/pick/17619454/baltimore-orioles-w-miley-texas-rangers-c-hamels
+2017-07-20 21:33:39.4258 : Coupon was added: Jaynash; 1,85; https://jotavaluepicks.blogabet.com/pick/17619448/burkina-faso-u21-vs-fyr-macedonia-u21
+2017-07-20 21:33:39.4409 : Coupon was added: trudaga; 2,15; https://vezuha.blogabet.com/pick/17619447/benfica-real-betis
+2017-07-20 21:33:39.4409 : Coupon was added: bastardi; 1,724; https://andateinculobastardi.blogabet.com/pick/17619424/r-dutra-silva-p-lorenzi-a-bedene-d-inglot
+2017-07-20 21:33:39.4564 : Coupon was added: CosaNostra; 2,1; https://lacosanostrasicily.blogabet.com/pick/17619444/videoton-v-jk-nomme-kalju
+2017-07-20 21:33:39.4564 : Coupon was added: D.; 2; https://dpirate.blogabet.com/pick/17619442/tereza-martincova-antonia-lottner
+2017-07-20 21:33:39.4564 : Coupon was added: TomTucker; 1,87; https://tomtucker.blogabet.com/pick/17619440/videoton-v-jk-nomme-kalju
+2017-07-20 21:33:39.4770 : Coupon was added: D.; 1,727; https://dpirate.blogabet.com/pick/17619439/irina-camelia-begu-pauline-parmentier
+2017-07-20 21:33:39.4770 : Coupon was added: anelka9393; 1,83; https://anelka9393.blogabet.com/pick/17619438/leiknir-reykjavik-v-hk-kopavogur
+2017-07-20 21:33:39.4920 : Coupon was added: CosaNostra; 3; https://lacosanostrasicily.blogabet.com/pick/17619426/videoton-v-jk-nomme-kalju
+2017-07-20 21:33:39.4920 : Coupon was added: Gronk; 1,763; https://gronkowski.blogabet.com/pick/17615639/fc-midtjylland-ferencvaros
+2017-07-20 21:33:39.5066 : Coupon was added: Conscious; 3,4; https://conscious.blogabet.com/pick/17619421/bulgaria-u20-women-v-usa-u20-women
+2017-07-20 21:34:49.5476 : 12 coupons were read.
+2017-07-20 21:36:25.1522 : 12 coupons were read.
+2017-07-20 21:37:49.7041 : 0 coupons were read.
+2017-07-20 21:39:23.1233 : 0 coupons were read.
+2017-07-20 21:40:58.0608 : 0 coupons were read.
+2017-07-20 21:42:38.3588 : 8 coupons were read.
+2017-07-20 21:42:38.3909 : Coupon was added: bastardi; 1,724; https://andateinculobastardi.blogabet.com/pick/17619424/r-dutra-silva-p-lorenzi-a-bedene-d-inglot
+2017-07-20 21:42:38.4054 : Coupon was added: Anonim31; 3; https://truebasketball.blogabet.com/pick/17619545/sa-silver-stars-indiana-fever
+2017-07-20 21:42:38.4245 : Coupon was added: ollandos; 2,37; https://ollandos4.blogabet.com/pick/17619537/ael-limassol-v-progres-niederkorn
+2017-07-20 21:42:38.4245 : Coupon was added: Suspicious Game Bettings; 2,2; https://samvaluetuna.blogabet.com/pick/17619511/kks-lech-poznan-fk-haugesund
+2017-07-20 21:42:38.4806 : Coupon was added: jogja79; 1,909; https://jogja79.blogabet.com/pick/17619532/crvena-zvezda-fc-irtysh-pavlodar
+2017-07-20 21:42:38.4957 : Coupon was added: WhiteMike; 2,13; https://whitemike.blogabet.com/pick/17619516/sa-silver-stars-indiana-fever
+2017-07-20 21:42:38.5057 : Coupon was added: TomTucker; 2,05; https://tomtucker.blogabet.com/pick/17619515/fylkir-reykjavik-v-grotta-seltjarnarnes
+2017-07-20 21:42:38.5177 : Coupon was added: Gabrieldinho; 3,7; https://gabrieldinho.blogabet.com/pick/17619514/ac-sparta-praha-vitesse-arnhem
+2017-07-20 21:43:36.6940 : 0 coupons were read.
+2017-07-20 21:45:02.0325 : 8 coupons were read.
+2017-07-20 21:46:19.8169 : 8 coupons were read.
+2017-07-20 21:47:28.7502 : 6 coupons were read.
+2017-07-20 21:47:28.7678 : Coupon was added: BoyBlue; 1,53; https://boyblue.blogabet.com/pick/17619582/atletico-paranaense-v-botafogo
+2017-07-20 21:47:28.7678 : Coupon was added: vk128; 18; https://vk128bit.blogabet.com/pick/17619577/sweden-w-russia-w
+2017-07-20 21:47:28.7858 : Coupon was added: trudaga; 2,01; https://vezuha.blogabet.com/pick/17619574/benfica-real-betis
+2017-07-20 21:47:28.7858 : Coupon was added: BoyBlue; 1,85; https://boyblue.blogabet.com/pick/17619571/sport-recife-v-atletico-goianiense
+2017-07-20 21:48:35.3639 : 6 coupons were read.
+2017-07-20 21:50:07.7266 : 0 coupons were read.
+2017-07-20 21:51:43.8165 : 6 coupons were read.
+2017-07-20 21:53:07.3186 : 0 coupons were read.
+2017-07-20 21:57:05.2319 : 0 coupons were read.
+2017-07-20 22:02:46.8980 : 9 coupons were read.
+2017-07-20 22:02:46.9918 : Coupon was added: valuefixman; 2; https://valuefix.blogabet.com/pick/17619724/fnatic-gambit-esports
+2017-07-20 22:02:46.9918 : Coupon was added: Suspicious Game Bettings; 2,2; https://samvaluetuna.blogabet.com/pick/17619511/kks-lech-poznan-fk-haugesund
+2017-07-20 22:02:47.0154 : Coupon was added: Vaya Pedal Cycling; 1,7; https://vayapedalcycling.blogabet.com/pick/17619711/tour-france-stage-19
+2017-07-20 22:02:47.0225 : Coupon was added: marketbet; 11; https://marketbet.blogabet.com/pick/17619699/jagiellonia-bialystok-v-fk-qabala
+2017-07-20 22:02:47.0225 : Coupon was added: Live.Bet; 1,64; https://hockeyexpert2016.blogabet.com/pick/17619695/fk-red-star-belgrade-crvena-zvezda-irtysch-pavlodar
+2017-07-20 22:02:47.0382 : Coupon was added: alikoko; 1,85; https://rufus22.blogabet.com/pick/17619692/lisburn-distillery-v-derriaghy-fc
+2017-07-20 22:02:47.0382 : Coupon was added: Live.Bet; 1,67; https://hockeyexpert2016.blogabet.com/pick/17619683/jagiellonia-bialystok-ssa-fk-qabala
+2017-07-20 22:02:47.0538 : Coupon was added: Maluodds; 2; https://maluodds.blogabet.com/pick/17619679/trinec-v-banik-ostrava
+2017-07-20 22:02:47.0538 : Coupon was added: MLB Play Ball Picks; 4,75; https://mlbplayballpicks.blogabet.com/pick/17619672/combo-pick
+2017-07-20 22:04:01.4314 : 0 coupons were read.
+2017-07-20 22:05:39.1450 : 9 coupons were read.
+2017-07-20 22:06:56.2388 : 0 coupons were read.
+2017-07-20 22:08:07.6772 : 12 coupons were read.
+2017-07-20 22:08:07.6938 : Coupon was added: ApolloBets94; 3,75; https://roxorinho.blogabet.com/pick/17619747/fnatic-vs-gambit-gaming-cs-go-pgl-major-krakow
+2017-07-20 22:08:07.6938 : Coupon was added: ApolloBets94; 3,6; https://roxorinho.blogabet.com/pick/17619744/north-vs-virtus-pro-cs-go-pgl-major-krakow
+2017-07-20 22:08:07.7124 : Coupon was added: ApolloBets94; 3,2; https://roxorinho.blogabet.com/pick/17619743/sk-gaming-vs-astralis-cs-go-pgl-major-krakow
+2017-07-20 22:08:07.7225 : Coupon was added: Breeze; 2,4; https://iperfect.blogabet.com/pick/17619742/jagiellonia-bialystok-corners-fk-qabala-corners
+2017-07-20 22:08:07.7225 : Coupon was added: ApolloBets94; 3,4; https://roxorinho.blogabet.com/pick/17619741/cloud9-vs-phoenix1-lol-na-lcs-summer-split
+2017-07-20 22:08:07.7395 : Coupon was added: ApolloBets94; 3,4; https://roxorinho.blogabet.com/pick/17619739/team-liquid-vs-envyus-lol-na-lcs-summer-split
+2017-07-20 22:08:07.7395 : Coupon was added: ApolloBets94; 3; https://roxorinho.blogabet.com/pick/17619737/flyquest-vs-immortals-lol-na-lcs-summer-split
+2017-07-20 22:08:07.7587 : Coupon was added: ApolloBets94; 3; https://roxorinho.blogabet.com/pick/17619736/phoenix1-vs-team-liquid-lol-na-lcs-summer-split
+2017-07-20 22:08:07.7708 : Coupon was added: ApolloBets94; 2,5; https://roxorinho.blogabet.com/pick/17619735/team-solomid-vs-team-dignitas-lol-na-lcs-summer-split
+2017-07-20 22:08:07.7708 : Coupon was added: Suspicious Game Bettings; 2,2; https://samvaluetuna.blogabet.com/pick/17619511/kks-lech-poznan-fk-haugesund
+2017-07-20 22:08:07.7897 : Coupon was added: valuefixman; 2; https://valuefix.blogabet.com/pick/17619729/immortals-big
+2017-07-20 22:09:24.3906 : 0 coupons were read.
+2017-07-20 22:10:59.9178 : 12 coupons were read.
+2017-07-20 22:12:03.0673 : 12 coupons were read.
+2017-07-20 22:13:41.6533 : 7 coupons were read.
+2017-07-20 22:13:41.6673 : Coupon was added: Forastero_Juan; 1,91; https://worldrugby-europeanbasket.blogabet.com/pick/17619796/deportes-tolima-alianza-petrolera
+2017-07-20 22:13:41.6673 : Coupon was added: BettingProJPN; 1,91; https://bettingprojpn.blogabet.com/pick/17619795/avispa-fukuoka-tokushima-vortis
+2017-07-20 22:13:41.6829 : Coupon was added: Live.Bet; 1,73; https://hockeyexpert2016.blogabet.com/pick/17619790/kr-reykjavik-maccabi-tel-aviv
+2017-07-20 22:13:41.6829 : Coupon was added: valencianistac; 1,72; https://valencianistacc.blogabet.com/pick/17619788/videoton-v-jk-nomme-kalju
+2017-07-20 22:13:41.6979 : Coupon was added: Rambo; 1,9; https://rambinho.blogabet.com/pick/17619778/north-virtus-pro
+2017-07-20 22:13:41.7055 : Coupon was added: Rambo; 2,2; https://rambinho.blogabet.com/pick/17619768/fnatic-gambit-esports
+2017-07-20 22:13:41.7055 : Coupon was added: Picks & Analysis; 3; https://picks_analysis.blogabet.com/pick/17619765/stefano-travaglia-v-carlos-taberner
+2017-07-21 13:17:12.3958 : 10 coupons were read.
+2017-08-03 14:17:16.0278 : 20 valuable coupons were read.
+2017-08-03 14:18:42.4911 : 20 valuable coupons were read.
+2017-08-03 14:21:28.1024 : 20 valuable coupons were read.
+2017-08-03 18:37:28.7456 : 18 valuable coupons were read.
+2017-08-03 18:38:12.3584 : 20 valuable coupons were read.
+2017-08-03 18:38:54.7258 : 20 valuable coupons were read.
+2017-08-03 18:52:07.8220 : 20 valuable coupons were read.
+2017-08-03 18:58:48.7924 : 20 valuable coupons were read.
+2017-08-03 19:30:46.5226 : 20 valuable coupons were read.
+2017-08-03 19:31:23.7595 : 20 valuable coupons were read.
+2017-08-03 19:49:52.0555 : 20 valuable coupons were read.
+2017-08-03 19:50:40.5887 : 20 valuable coupons were read.
+2017-08-03 19:51:19.7757 : 20 valuable coupons were read.
+2017-08-03 19:52:07.9765 : 20 valuable coupons were read.
+2017-08-04 01:46:52.3048 : 20 valuable coupons were read.
+2017-08-04 01:48:44.9185 : 20 valuable coupons were read.
+2017-08-04 01:49:23.5323 : 20 valuable coupons were read.
+2017-08-04 01:49:56.1117 : 0 valuable coupons were read.
+2017-08-06 00:45:20.4339 : 19 valuable coupons were read.
+2017-08-06 00:46:00.9833 : 19 valuable coupons were read.
+2017-08-06 00:46:33.3503 : 0 valuable coupons were read.
+2017-08-06 00:50:44.1565 : 0 valuable coupons were read.
+2017-08-06 00:51:24.8523 : 19 valuable coupons were read.
+2017-08-06 00:52:07.8786 : 19 valuable coupons were read.
+2017-08-06 00:52:38.5396 : 0 valuable coupons were read.
+2017-08-07 19:23:21.1998 : 17 valuable coupons were read.
+2017-08-08 21:54:15.4787 : 13 valuable coupons were read.
+2017-08-09 01:54:36.0342 : 13 valuable coupons were read.
+2017-08-09 01:56:08.6306 : 14 valuable coupons were read.
+2017-08-09 01:58:03.2180 : 14 valuable coupons were read.
+2017-08-09 01:59:57.4039 : 14 valuable coupons were read.
+2017-08-09 02:01:13.4487 : 0 valuable coupons were read.
+2017-08-09 02:02:38.4557 : 14 valuable coupons were read.
+2017-08-09 02:03:57.5897 : 14 valuable coupons were read.
+2017-08-09 02:05:48.4307 : 14 valuable coupons were read.
+2017-08-09 02:07:21.4229 : 8 valuable coupons were read.
+2017-08-11 00:18:03.8676 : 1 valuable coupons were read.
+2017-08-11 00:18:50.5956 : 1 valuable coupons were read.
+2017-08-11 00:19:36.4945 : 1 valuable coupons were read.
+2017-08-11 13:59:29.9028 : 17 valuable coupons were read.
+2017-08-11 14:00:17.8311 : 17 valuable coupons were read.
+2017-08-11 14:01:23.3198 : 17 valuable coupons were read.
+2017-08-11 14:02:56.7033 : 10 valuable coupons were read.
+2017-08-11 14:04:53.7775 : 10 valuable coupons were read.
+2017-08-11 14:06:24.3358 : 10 valuable coupons were read.
+2017-08-11 14:08:24.2245 : 9 valuable coupons were read.
+2017-08-11 14:09:53.1235 : 9 valuable coupons were read.
+2017-08-11 14:11:18.0472 : 9 valuable coupons were read.
+2017-08-11 14:12:48.7950 : 9 valuable coupons were read.
+2017-08-11 14:14:45.6207 : 9 valuable coupons were read.
+2017-08-11 14:16:32.3680 : 9 valuable coupons were read.
+2017-08-11 14:17:51.9282 : 9 valuable coupons were read.
+2017-08-11 14:19:24.5465 : 3 valuable coupons were read.
+2017-08-11 14:20:52.6285 : 3 valuable coupons were read.
+2017-08-11 14:22:12.2045 : 3 valuable coupons were read.
+2017-08-11 14:23:38.7151 : 9 valuable coupons were read.
+2017-08-11 14:24:59.9189 : 9 valuable coupons were read.
+2017-08-11 14:26:57.9235 : 9 valuable coupons were read.
+2017-08-11 14:28:28.8789 : 9 valuable coupons were read.
+2017-08-11 14:30:19.9202 : 11 valuable coupons were read.
+2017-08-11 14:32:11.4465 : 11 valuable coupons were read.
+2017-08-11 14:33:52.0909 : 11 valuable coupons were read.
+2017-08-11 14:35:40.7010 : 11 valuable coupons were read.
+2017-08-11 14:37:05.7967 : 11 valuable coupons were read.
+2017-08-11 14:38:34.9511 : 11 valuable coupons were read.
+2017-08-11 14:40:13.0803 : 11 valuable coupons were read.
+2017-08-11 14:41:32.6752 : 11 valuable coupons were read.
+2017-08-11 14:43:07.4336 : 11 valuable coupons were read.
+2017-08-11 14:44:37.8385 : 8 valuable coupons were read.
+2017-08-11 14:46:12.8051 : 8 valuable coupons were read.
+2017-08-11 14:47:33.6325 : 8 valuable coupons were read.
+2017-08-11 14:49:39.6973 : 8 valuable coupons were read.
+2017-08-11 14:51:14.3811 : 8 valuable coupons were read.
+2017-08-11 14:52:50.2173 : 8 valuable coupons were read.
+2017-08-11 14:54:38.5783 : 12 valuable coupons were read.
+2017-08-11 14:56:19.4680 : 12 valuable coupons were read.
+2017-08-11 14:58:10.8869 : 12 valuable coupons were read.
+2017-08-11 14:59:43.8824 : 7 valuable coupons were read.
+2017-08-11 15:01:28.8809 : 7 valuable coupons were read.
+2017-08-11 15:03:29.4552 : 7 valuable coupons were read.
+2017-08-11 15:04:55.5359 : 10 valuable coupons were read.
+2017-08-11 15:06:46.6734 : 10 valuable coupons were read.
+2017-08-11 15:08:33.4107 : 10 valuable coupons were read.
+2017-08-11 15:09:59.3228 : 13 valuable coupons were read.
+2017-08-11 15:11:30.3250 : 13 valuable coupons were read.
+2017-08-11 15:13:19.0953 : 13 valuable coupons were read.
+2017-08-11 15:15:06.8038 : 9 valuable coupons were read.
+2017-08-11 15:16:33.4016 : 9 valuable coupons were read.
+2017-08-11 15:18:13.4662 : 9 valuable coupons were read.
+2017-08-11 15:19:34.2026 : 9 valuable coupons were read.
+2017-08-11 15:21:08.5801 : 11 valuable coupons were read.
+2017-08-11 15:22:39.0761 : 11 valuable coupons were read.
+2017-08-11 15:24:25.0295 : 11 valuable coupons were read.
+2017-08-11 15:26:12.4583 : 12 valuable coupons were read.
+2017-08-11 15:28:23.4169 : 12 valuable coupons were read.
+2017-08-11 15:29:50.3067 : 12 valuable coupons were read.
+2017-08-11 15:31:57.7180 : 5 valuable coupons were read.
+2017-08-11 15:33:35.2147 : 5 valuable coupons were read.
+2017-08-11 15:35:27.2107 : 9 valuable coupons were read.
+2017-08-11 15:37:21.3325 : 9 valuable coupons were read.
+2017-08-11 15:39:20.3841 : 9 valuable coupons were read.
+2017-08-11 15:41:23.7297 : 10 valuable coupons were read.
+2017-08-11 15:43:10.8313 : 10 valuable coupons were read.
+2017-08-11 15:45:03.4756 : 10 valuable coupons were read.
+2017-08-11 15:47:02.9730 : 9 valuable coupons were read.
+2017-08-11 15:49:04.5377 : 9 valuable coupons were read.
+2017-08-11 15:51:03.1550 : 6 valuable coupons were read.
+2017-08-11 15:52:48.4558 : 6 valuable coupons were read.
+2017-08-11 15:54:44.0002 : 6 valuable coupons were read.
+2017-08-11 15:56:33.9357 : 4 valuable coupons were read.
+2017-08-11 15:58:12.8671 : 4 valuable coupons were read.
+2017-08-11 16:00:03.7161 : 4 valuable coupons were read.
+2017-08-11 16:01:36.1457 : 4 valuable coupons were read.
+2017-08-11 16:03:07.2818 : 4 valuable coupons were read.
+2017-08-11 16:04:56.7017 : 4 valuable coupons were read.
+2017-08-11 16:06:18.3954 : 4 valuable coupons were read.
+2017-08-11 16:08:13.2516 : 4 valuable coupons were read.
+2017-08-11 16:09:53.7261 : 4 valuable coupons were read.
+2017-08-11 16:11:52.8071 : 5 valuable coupons were read.
+2017-08-11 16:13:32.4554 : 5 valuable coupons were read.
+2017-08-11 16:15:44.5458 : 5 valuable coupons were read.
+2017-08-11 16:17:55.5669 : 5 valuable coupons were read.
+2017-08-11 16:19:50.5964 : 5 valuable coupons were read.
+2017-08-11 16:21:18.0960 : 5 valuable coupons were read.
+2017-08-11 16:22:55.6052 : 6 valuable coupons were read.
+2017-08-11 16:24:45.1252 : 6 valuable coupons were read.
+2017-08-11 16:26:16.7771 : 6 valuable coupons were read.
+2017-08-11 16:27:55.7179 : 11 valuable coupons were read.
+2017-08-11 16:29:25.3088 : 11 valuable coupons were read.
+2017-08-11 16:31:07.1903 : 11 valuable coupons were read.
+2017-08-11 16:32:46.9268 : 15 valuable coupons were read.
+2017-08-11 16:34:24.6105 : 15 valuable coupons were read.
+2017-08-11 16:36:01.8628 : 15 valuable coupons were read.
+2017-08-11 16:38:03.3750 : 8 valuable coupons were read.
+2017-08-11 16:39:36.6294 : 8 valuable coupons were read.
+2017-08-11 16:41:05.4913 : 8 valuable coupons were read.
+2017-08-11 16:43:03.9202 : 7 valuable coupons were read.
+2017-08-11 16:44:56.8600 : 7 valuable coupons were read.
+2017-08-11 16:46:25.1038 : 7 valuable coupons were read.
+2017-08-11 16:48:08.2780 : 8 valuable coupons were read.
+2017-08-11 16:50:11.0377 : 8 valuable coupons were read.
+2017-08-11 16:51:53.5266 : 8 valuable coupons were read.
+2017-08-11 16:53:36.5035 : 10 valuable coupons were read.
+2017-08-11 16:55:36.8789 : 10 valuable coupons were read.
+2017-08-11 16:57:18.9434 : 10 valuable coupons were read.
+2017-08-11 16:58:49.8754 : 11 valuable coupons were read.
+2017-08-11 17:00:48.7419 : 11 valuable coupons were read.
+2017-08-11 17:02:26.9968 : 11 valuable coupons were read.
+2017-08-11 17:04:41.3245 : 9 valuable coupons were read.
+2017-08-11 17:06:50.0607 : 9 valuable coupons were read.
+2017-08-11 17:08:41.0562 : 3 valuable coupons were read.
+2017-08-11 17:10:18.9632 : 3 valuable coupons were read.
+2017-08-11 17:11:57.2062 : 3 valuable coupons were read.
+2017-08-11 17:13:30.2364 : 7 valuable coupons were read.
+2017-08-11 17:15:25.0823 : 7 valuable coupons were read.
+2017-08-11 17:17:24.0655 : 7 valuable coupons were read.
+2017-08-11 17:19:19.2108 : 6 valuable coupons were read.
+2017-08-11 17:20:56.3504 : 6 valuable coupons were read.
+2017-08-11 17:22:37.8021 : 6 valuable coupons were read.
+2017-08-11 17:24:04.6540 : 12 valuable coupons were read.
+2017-08-11 17:25:40.3188 : 12 valuable coupons were read.
+2017-08-11 17:27:09.1945 : 12 valuable coupons were read.
+2017-08-11 17:29:05.2380 : 3 valuable coupons were read.
+2017-08-11 17:30:25.5384 : 3 valuable coupons were read.
+2017-08-11 17:31:46.6692 : 3 valuable coupons were read.
+2017-08-11 17:33:42.4886 : 6 valuable coupons were read.
+2017-08-11 17:35:16.5239 : 6 valuable coupons were read.
+2017-08-11 17:36:56.1103 : 6 valuable coupons were read.
+2017-08-11 17:38:16.6180 : 6 valuable coupons were read.
+2017-08-11 17:39:58.3454 : 5 valuable coupons were read.
+2017-08-11 17:41:17.6897 : 5 valuable coupons were read.
+2017-08-11 17:42:37.4004 : 5 valuable coupons were read.
+2017-08-11 17:44:08.3820 : 10 valuable coupons were read.
+2017-08-11 17:45:38.6404 : 10 valuable coupons were read.
+2017-08-11 17:47:20.8612 : 10 valuable coupons were read.
+2017-08-11 17:49:01.2842 : 5 valuable coupons were read.
+2017-08-11 17:50:39.3515 : 5 valuable coupons were read.
+2017-08-11 17:52:41.2472 : 5 valuable coupons were read.
+2017-08-11 17:54:28.3417 : 8 valuable coupons were read.
+2017-08-11 17:56:25.3819 : 8 valuable coupons were read.
+2017-08-11 17:58:18.8301 : 8 valuable coupons were read.
+2017-08-11 18:54:02.0601 : 12 valuable coupons were read.
+2017-08-11 18:55:58.8819 : 9 valuable coupons were read.
+2017-08-11 18:57:28.5229 : 9 valuable coupons were read.
+2017-08-11 18:59:07.5368 : 9 valuable coupons were read.
+2017-08-11 19:00:52.1746 : 6 valuable coupons were read.
+2017-08-11 19:02:40.0408 : 6 valuable coupons were read.
+2017-08-11 19:04:37.5428 : 6 valuable coupons were read.
+2017-08-11 19:06:25.1449 : 13 valuable coupons were read.
+2017-08-11 19:08:13.9412 : 13 valuable coupons were read.
+2017-08-11 19:09:54.3591 : 13 valuable coupons were read.
+2017-08-11 19:11:15.1598 : 9 valuable coupons were read.
+2017-08-11 19:12:57.2094 : 9 valuable coupons were read.
+2017-08-11 19:14:52.1255 : 9 valuable coupons were read.
+2017-08-11 19:16:28.3372 : 10 valuable coupons were read.
+2017-08-11 19:18:12.6131 : 10 valuable coupons were read.
+2017-08-11 19:19:39.4643 : 10 valuable coupons were read.
+2017-08-11 19:21:27.6580 : 3 valuable coupons were read.
+2017-08-11 19:23:11.7739 : 3 valuable coupons were read.
+2017-08-11 19:24:57.7425 : 3 valuable coupons were read.
+2017-08-11 19:26:53.6660 : 5 valuable coupons were read.
+2017-08-11 19:28:32.0355 : 5 valuable coupons were read.
+2017-08-11 19:29:57.6315 : 5 valuable coupons were read.
+2017-08-11 19:31:33.3315 : 8 valuable coupons were read.
+2017-08-11 19:33:15.3593 : 8 valuable coupons were read.
+2017-08-11 19:34:47.5031 : 8 valuable coupons were read.
+2017-08-11 19:36:31.5523 : 7 valuable coupons were read.
+2017-08-11 19:37:58.7610 : 7 valuable coupons were read.
+2017-08-11 19:39:35.0079 : 7 valuable coupons were read.
+2017-08-11 19:41:02.8033 : 7 valuable coupons were read.
+2017-08-11 19:42:26.9229 : 8 valuable coupons were read.
+2017-08-11 19:44:10.9833 : 8 valuable coupons were read.
+2017-08-11 19:46:03.6160 : 8 valuable coupons were read.
+2017-08-11 19:47:49.3444 : 11 valuable coupons were read.
+2017-08-11 19:49:10.4785 : 11 valuable coupons were read.

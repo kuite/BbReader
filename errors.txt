@@ -1,0 +1,452 @@
+2017-07-20 01:53:52.2406 : Exception : System.FormatException: Nieprawid³owy format ci¹gu wejœciowego.
+   w System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   w System.Double.Parse(String s)
+   w BetReader.Scraper.Core.Factories.PickFactory.SetOddsCombo(Pick pick, IWebElement singlePick) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\PickFactory.cs:wiersz 78
+   w BetReader.Scraper.Core.Factories.PickFactory.GetPick(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\PickFactory.cs:wiersz 16
+   w BetReader.Scraper.Core.Factories.CouponFactory.ParsePicks(Coupon coupon, IWebElement source, String[] sourceText) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 57
+   w BetReader.Scraper.Core.Factories.CouponFactory.GetCoupon(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 32
+   w BetReader.Scraper.Core.FeedScraper.<GetValuableCoupons>d__2.MoveNext() w C:\projects\Betreader\BetReader.Scraper\Core\FeedScraper.cs:wiersz 43
+   w System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   w System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   w BetReader.Service.Core.Jobs.BbFeedReadJob.Execute(IJobExecutionContext context) w C:\projects\Betreader\BetReader.Service\Core\Jobs\BbFeedReadJob.cs:wiersz 37
+2017-07-20 02:00:50.8965 : Exception : System.FormatException: Nieprawid³owy format ci¹gu wejœciowego.
+   w System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   w System.Double.Parse(String s)
+   w BetReader.Scraper.Core.Factories.PickFactory.SetOddsCombo(Pick pick, IWebElement singlePick) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\PickFactory.cs:wiersz 78
+   w BetReader.Scraper.Core.Factories.PickFactory.GetPick(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\PickFactory.cs:wiersz 16
+   w BetReader.Scraper.Core.Factories.CouponFactory.ParsePicks(Coupon coupon, IWebElement source, String[] sourceText) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 57
+   w BetReader.Scraper.Core.Factories.CouponFactory.GetCoupon(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 32
+   w BetReader.Scraper.Core.FeedScraper.<GetValuableCoupons>d__2.MoveNext() w C:\projects\Betreader\BetReader.Scraper\Core\FeedScraper.cs:wiersz 43
+   w System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   w System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   w BetReader.Service.Core.Jobs.BbFeedReadJob.Execute(IJobExecutionContext context) w C:\projects\Betreader\BetReader.Service\Core\Jobs\BbFeedReadJob.cs:wiersz 37
+2017-07-20 02:02:17.4194 : Exception : System.FormatException: Nieprawid³owy format ci¹gu wejœciowego.
+   w System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   w System.Double.Parse(String s)
+   w BetReader.Scraper.Core.Factories.PickFactory.SetOddsCombo(Pick pick, IWebElement singlePick) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\PickFactory.cs:wiersz 78
+   w BetReader.Scraper.Core.Factories.PickFactory.GetPick(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\PickFactory.cs:wiersz 16
+   w BetReader.Scraper.Core.Factories.CouponFactory.ParsePicks(Coupon coupon, IWebElement source, String[] sourceText) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 57
+   w BetReader.Scraper.Core.Factories.CouponFactory.GetCoupon(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 32
+   w BetReader.Scraper.Core.FeedScraper.<GetValuableCoupons>d__2.MoveNext() w C:\projects\Betreader\BetReader.Scraper\Core\FeedScraper.cs:wiersz 43
+   w System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   w System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   w BetReader.Service.Core.Jobs.BbFeedReadJob.Execute(IJobExecutionContext context) w C:\projects\Betreader\BetReader.Service\Core\Jobs\BbFeedReadJob.cs:wiersz 37
+2017-07-20 19:05:06.0365 : Exception : System.FormatException: Nieprawid³owy format ci¹gu wejœciowego.
+   w System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   w System.Double.Parse(String s)
+   w BetReader.Scraper.Core.Factories.PickFactory.SetOddsCombo(Pick pick, IWebElement singlePick) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\PickFactory.cs:wiersz 78
+   w BetReader.Scraper.Core.Factories.PickFactory.GetPick(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\PickFactory.cs:wiersz 16
+   w BetReader.Scraper.Core.Factories.CouponFactory.ParsePicks(Coupon coupon, IWebElement source, String[] sourceText) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 57
+   w BetReader.Scraper.Core.Factories.CouponFactory.GetCoupon(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 32
+   w BetReader.Scraper.Core.FeedScraper.<GetValuableCoupons>d__2.MoveNext() w C:\projects\Betreader\BetReader.Scraper\Core\FeedScraper.cs:wiersz 43
+   w System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   w System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   w BetReader.Service.Core.Jobs.BbFeedReadJob.Execute(IJobExecutionContext context) w C:\projects\Betreader\BetReader.Service\Core\Jobs\BbFeedReadJob.cs:wiersz 37
+2017-07-20 19:21:16.9590 : Exception : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"tag name","selector":"a"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.26.436362 (5476ec6bf7ccbada1734a0cdec7d570bb042aa30),platform=Windows NT 10.0.14393 x86_64)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElementByTagName(String tagName)
+   w OpenQA.Selenium.By.<>c__DisplayClass1a.<TagName>b__18(ISearchContext context)
+   w OpenQA.Selenium.By.FindElement(ISearchContext context)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)
+   w BetReader.Scraper.Helpers.GetHrefNode(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Helpers.cs:wiersz 10
+   w BetReader.Scraper.Core.Factories.CouponFactory.SetCouponUrl(Coupon coupon, IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 122
+   w BetReader.Scraper.Core.Factories.CouponFactory.GetCoupon(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 25
+   w BetReader.Scraper.Core.FeedScraper.<GetValuableCoupons>d__2.MoveNext() w C:\projects\Betreader\BetReader.Scraper\Core\FeedScraper.cs:wiersz 43
+   w System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   w System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   w BetReader.Service.Core.Jobs.BbFeedReadJob.Execute(IJobExecutionContext context) w C:\projects\Betreader\BetReader.Service\Core\Jobs\BbFeedReadJob.cs:wiersz 37
+2017-07-20 19:39:14.6916 : Exception : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"tag name","selector":"a"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.26.436362 (5476ec6bf7ccbada1734a0cdec7d570bb042aa30),platform=Windows NT 10.0.14393 x86_64)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElementByTagName(String tagName)
+   w OpenQA.Selenium.By.<>c__DisplayClass1a.<TagName>b__18(ISearchContext context)
+   w OpenQA.Selenium.By.FindElement(ISearchContext context)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)
+   w BetReader.Scraper.Helpers.GetHrefNode(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Helpers.cs:wiersz 10
+   w BetReader.Scraper.Core.Factories.CouponFactory.SetCouponUrl(Coupon coupon, IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 122
+   w BetReader.Scraper.Core.Factories.CouponFactory.GetCoupon(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 25
+   w BetReader.Scraper.Core.FeedScraper.<GetValuableCoupons>d__2.MoveNext() w C:\projects\Betreader\BetReader.Scraper\Core\FeedScraper.cs:wiersz 43
+   w System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   w System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   w BetReader.Service.Core.Jobs.BbFeedReadJob.Execute(IJobExecutionContext context) w C:\projects\Betreader\BetReader.Service\Core\Jobs\BbFeedReadJob.cs:wiersz 37
+2017-07-20 20:00:27.9780 : Exception : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"tag name","selector":"a"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.26.436362 (5476ec6bf7ccbada1734a0cdec7d570bb042aa30),platform=Windows NT 10.0.14393 x86_64)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElementByTagName(String tagName)
+   w OpenQA.Selenium.By.<>c__DisplayClass1a.<TagName>b__18(ISearchContext context)
+   w OpenQA.Selenium.By.FindElement(ISearchContext context)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)
+   w BetReader.Scraper.Helpers.GetHrefNode(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Helpers.cs:wiersz 10
+   w BetReader.Scraper.Core.Factories.CouponFactory.SetCouponUrl(Coupon coupon, IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 122
+   w BetReader.Scraper.Core.Factories.CouponFactory.GetCoupon(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 25
+   w BetReader.Scraper.Core.FeedScraper.<GetValuableCoupons>d__2.MoveNext() w C:\projects\Betreader\BetReader.Scraper\Core\FeedScraper.cs:wiersz 43
+   w System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   w System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   w BetReader.Service.Core.Jobs.BbFeedReadJob.Execute(IJobExecutionContext context) w C:\projects\Betreader\BetReader.Service\Core\Jobs\BbFeedReadJob.cs:wiersz 37
+2017-07-20 20:31:06.2858 : Exception : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"tag name","selector":"a"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.26.436362 (5476ec6bf7ccbada1734a0cdec7d570bb042aa30),platform=Windows NT 10.0.14393 x86_64)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElementByTagName(String tagName)
+   w OpenQA.Selenium.By.<>c__DisplayClass1a.<TagName>b__18(ISearchContext context)
+   w OpenQA.Selenium.By.FindElement(ISearchContext context)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)
+   w BetReader.Scraper.Helpers.GetHrefNode(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Helpers.cs:wiersz 10
+   w BetReader.Scraper.Core.Factories.CouponFactory.SetCouponUrl(Coupon coupon, IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 122
+   w BetReader.Scraper.Core.Factories.CouponFactory.GetCoupon(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 25
+   w BetReader.Scraper.Core.FeedScraper.<GetValuableCoupons>d__2.MoveNext() w C:\projects\Betreader\BetReader.Scraper\Core\FeedScraper.cs:wiersz 43
+   w System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   w System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   w BetReader.Service.Core.Jobs.BbFeedReadJob.Execute(IJobExecutionContext context) w C:\projects\Betreader\BetReader.Service\Core\Jobs\BbFeedReadJob.cs:wiersz 37
+2017-07-20 20:32:36.8538 : Exception : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"tag name","selector":"a"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.26.436362 (5476ec6bf7ccbada1734a0cdec7d570bb042aa30),platform=Windows NT 10.0.14393 x86_64)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElementByTagName(String tagName)
+   w OpenQA.Selenium.By.<>c__DisplayClass1a.<TagName>b__18(ISearchContext context)
+   w OpenQA.Selenium.By.FindElement(ISearchContext context)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)
+   w BetReader.Scraper.Helpers.GetHrefNode(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Helpers.cs:wiersz 10
+   w BetReader.Scraper.Core.Factories.CouponFactory.SetCouponUrl(Coupon coupon, IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 122
+   w BetReader.Scraper.Core.Factories.CouponFactory.GetCoupon(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 25
+   w BetReader.Scraper.Core.FeedScraper.<GetValuableCoupons>d__2.MoveNext() w C:\projects\Betreader\BetReader.Scraper\Core\FeedScraper.cs:wiersz 43
+   w System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   w System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   w BetReader.Service.Core.Jobs.BbFeedReadJob.Execute(IJobExecutionContext context) w C:\projects\Betreader\BetReader.Service\Core\Jobs\BbFeedReadJob.cs:wiersz 37
+2017-07-20 20:33:43.1614 : Exception : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"tag name","selector":"a"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.26.436362 (5476ec6bf7ccbada1734a0cdec7d570bb042aa30),platform=Windows NT 10.0.14393 x86_64)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElementByTagName(String tagName)
+   w OpenQA.Selenium.By.<>c__DisplayClass1a.<TagName>b__18(ISearchContext context)
+   w OpenQA.Selenium.By.FindElement(ISearchContext context)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)
+   w BetReader.Scraper.Helpers.GetHrefNode(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Helpers.cs:wiersz 10
+   w BetReader.Scraper.Core.Factories.CouponFactory.SetCouponUrl(Coupon coupon, IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 122
+   w BetReader.Scraper.Core.Factories.CouponFactory.GetCoupon(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 25
+   w BetReader.Scraper.Core.FeedScraper.<GetValuableCoupons>d__2.MoveNext() w C:\projects\Betreader\BetReader.Scraper\Core\FeedScraper.cs:wiersz 43
+   w System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   w System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   w BetReader.Service.Core.Jobs.BbFeedReadJob.Execute(IJobExecutionContext context) w C:\projects\Betreader\BetReader.Service\Core\Jobs\BbFeedReadJob.cs:wiersz 37
+2017-07-20 20:35:08.4468 : Exception : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"tag name","selector":"a"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.26.436362 (5476ec6bf7ccbada1734a0cdec7d570bb042aa30),platform=Windows NT 10.0.14393 x86_64)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElementByTagName(String tagName)
+   w OpenQA.Selenium.By.<>c__DisplayClass1a.<TagName>b__18(ISearchContext context)
+   w OpenQA.Selenium.By.FindElement(ISearchContext context)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)
+   w BetReader.Scraper.Helpers.GetHrefNode(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Helpers.cs:wiersz 10
+   w BetReader.Scraper.Core.Factories.CouponFactory.SetCouponUrl(Coupon coupon, IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 122
+   w BetReader.Scraper.Core.Factories.CouponFactory.GetCoupon(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 25
+   w BetReader.Scraper.Core.FeedScraper.<GetValuableCoupons>d__2.MoveNext() w C:\projects\Betreader\BetReader.Scraper\Core\FeedScraper.cs:wiersz 43
+   w System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   w System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   w BetReader.Service.Core.Jobs.BbFeedReadJob.Execute(IJobExecutionContext context) w C:\projects\Betreader\BetReader.Service\Core\Jobs\BbFeedReadJob.cs:wiersz 37
+2017-07-20 21:54:31.0440 : Exception : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"tag name","selector":"a"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.26.436362 (5476ec6bf7ccbada1734a0cdec7d570bb042aa30),platform=Windows NT 10.0.14393 x86_64)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElementByTagName(String tagName)
+   w OpenQA.Selenium.By.<>c__DisplayClass1a.<TagName>b__18(ISearchContext context)
+   w OpenQA.Selenium.By.FindElement(ISearchContext context)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)
+   w BetReader.Scraper.Helpers.GetHrefNode(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Helpers.cs:wiersz 10
+   w BetReader.Scraper.Core.Factories.CouponFactory.SetCouponUrl(Coupon coupon, IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 122
+   w BetReader.Scraper.Core.Factories.CouponFactory.GetCoupon(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 25
+   w BetReader.Scraper.Core.FeedScraper.<GetValuableCoupons>d__2.MoveNext() w C:\projects\Betreader\BetReader.Scraper\Core\FeedScraper.cs:wiersz 43
+   w System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   w System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   w BetReader.Service.Core.Jobs.BbFeedReadJob.Execute(IJobExecutionContext context) w C:\projects\Betreader\BetReader.Service\Core\Jobs\BbFeedReadJob.cs:wiersz 37
+2017-07-20 21:56:06.1380 : Exception : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"tag name","selector":"a"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.26.436362 (5476ec6bf7ccbada1734a0cdec7d570bb042aa30),platform=Windows NT 10.0.14393 x86_64)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElementByTagName(String tagName)
+   w OpenQA.Selenium.By.<>c__DisplayClass1a.<TagName>b__18(ISearchContext context)
+   w OpenQA.Selenium.By.FindElement(ISearchContext context)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)
+   w BetReader.Scraper.Helpers.GetHrefNode(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Helpers.cs:wiersz 10
+   w BetReader.Scraper.Core.Factories.CouponFactory.SetCouponUrl(Coupon coupon, IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 122
+   w BetReader.Scraper.Core.Factories.CouponFactory.GetCoupon(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 25
+   w BetReader.Scraper.Core.FeedScraper.<GetValuableCoupons>d__2.MoveNext() w C:\projects\Betreader\BetReader.Scraper\Core\FeedScraper.cs:wiersz 43
+   w System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   w System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   w BetReader.Service.Core.Jobs.BbFeedReadJob.Execute(IJobExecutionContext context) w C:\projects\Betreader\BetReader.Service\Core\Jobs\BbFeedReadJob.cs:wiersz 37
+2017-07-20 21:58:34.6162 : Exception : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"tag name","selector":"a"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.26.436362 (5476ec6bf7ccbada1734a0cdec7d570bb042aa30),platform=Windows NT 10.0.14393 x86_64)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElementByTagName(String tagName)
+   w OpenQA.Selenium.By.<>c__DisplayClass1a.<TagName>b__18(ISearchContext context)
+   w OpenQA.Selenium.By.FindElement(ISearchContext context)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)
+   w BetReader.Scraper.Helpers.GetHrefNode(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Helpers.cs:wiersz 10
+   w BetReader.Scraper.Core.Factories.CouponFactory.SetCouponUrl(Coupon coupon, IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 122
+   w BetReader.Scraper.Core.Factories.CouponFactory.GetCoupon(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 25
+   w BetReader.Scraper.Core.FeedScraper.<GetValuableCoupons>d__2.MoveNext() w C:\projects\Betreader\BetReader.Scraper\Core\FeedScraper.cs:wiersz 43
+   w System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   w System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   w BetReader.Service.Core.Jobs.BbFeedReadJob.Execute(IJobExecutionContext context) w C:\projects\Betreader\BetReader.Service\Core\Jobs\BbFeedReadJob.cs:wiersz 37
+2017-07-20 22:00:17.4166 : Exception : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"tag name","selector":"a"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.26.436362 (5476ec6bf7ccbada1734a0cdec7d570bb042aa30),platform=Windows NT 10.0.14393 x86_64)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElementByTagName(String tagName)
+   w OpenQA.Selenium.By.<>c__DisplayClass1a.<TagName>b__18(ISearchContext context)
+   w OpenQA.Selenium.By.FindElement(ISearchContext context)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)
+   w BetReader.Scraper.Helpers.GetHrefNode(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Helpers.cs:wiersz 10
+   w BetReader.Scraper.Core.Factories.CouponFactory.SetCouponUrl(Coupon coupon, IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 122
+   w BetReader.Scraper.Core.Factories.CouponFactory.GetCoupon(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 25
+   w BetReader.Scraper.Core.FeedScraper.<GetValuableCoupons>d__2.MoveNext() w C:\projects\Betreader\BetReader.Scraper\Core\FeedScraper.cs:wiersz 43
+   w System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   w System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   w BetReader.Service.Core.Jobs.BbFeedReadJob.Execute(IJobExecutionContext context) w C:\projects\Betreader\BetReader.Service\Core\Jobs\BbFeedReadJob.cs:wiersz 37
+2017-07-20 22:01:31.8519 : Exception : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"tag name","selector":"a"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.26.436362 (5476ec6bf7ccbada1734a0cdec7d570bb042aa30),platform=Windows NT 10.0.14393 x86_64)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElementByTagName(String tagName)
+   w OpenQA.Selenium.By.<>c__DisplayClass1a.<TagName>b__18(ISearchContext context)
+   w OpenQA.Selenium.By.FindElement(ISearchContext context)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)
+   w BetReader.Scraper.Helpers.GetHrefNode(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Helpers.cs:wiersz 10
+   w BetReader.Scraper.Core.Factories.CouponFactory.SetCouponUrl(Coupon coupon, IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 122
+   w BetReader.Scraper.Core.Factories.CouponFactory.GetCoupon(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 25
+   w BetReader.Scraper.Core.FeedScraper.<GetValuableCoupons>d__2.MoveNext() w C:\projects\Betreader\BetReader.Scraper\Core\FeedScraper.cs:wiersz 43
+   w System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   w System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   w BetReader.Service.Core.Jobs.BbFeedReadJob.Execute(IJobExecutionContext context) w C:\projects\Betreader\BetReader.Service\Core\Jobs\BbFeedReadJob.cs:wiersz 37
+2017-07-21 13:17:15.4052 : Exception : System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsResolved'.
+Invalid column name 'IsWon'.
+Invalid column name 'IsPlayed'.
+Invalid column name 'IsDismissed'.
+   w System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   w System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   w System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   w System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   w System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   w System.Data.SqlClient.SqlDataReader.get_MetaData()
+   w System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   w System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   w System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   w System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   w System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   w System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   w System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   w System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   w System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   w System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   w System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   w System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   w System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- Koniec œladu stosu wyj¹tków wewnêtrznych ---
+   w System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   w System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   w System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   w System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   w System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   w System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   w System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   w System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   w System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   w System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   w System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   w BetReader.Service.Core.DataAccess.DbWrapper.AddCouponsToPlay(List`1 coupons) w C:\projects\Betreader\BetReader.Service\Core\DataAccess\DbWrapper.cs:wiersz 48
+   w BetReader.Service.Core.Jobs.BbFeedReadJob.Execute(IJobExecutionContext context) w C:\projects\Betreader\BetReader.Service\Core\Jobs\BbFeedReadJob.cs:wiersz 40
+2017-07-21 13:18:36.7908 : Exception : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"tag name","selector":"a"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.26.436362 (5476ec6bf7ccbada1734a0cdec7d570bb042aa30),platform=Windows NT 10.0.14393 x86_64)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElementByTagName(String tagName)
+   w OpenQA.Selenium.By.<>c__DisplayClass1a.<TagName>b__18(ISearchContext context)
+   w OpenQA.Selenium.By.FindElement(ISearchContext context)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)
+   w BetReader.Scraper.Helpers.GetHrefNode(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Helpers.cs:wiersz 10
+   w BetReader.Scraper.Core.Factories.CouponFactory.SetCouponUrl(Coupon coupon, IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 122
+   w BetReader.Scraper.Core.Factories.CouponFactory.GetCoupon(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 25
+   w BetReader.Scraper.Core.FeedScraper.<GetValuableCoupons>d__2.MoveNext() w C:\projects\Betreader\BetReader.Scraper\Core\FeedScraper.cs:wiersz 43
+   w System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   w System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   w BetReader.Service.Core.Jobs.BbFeedReadJob.Execute(IJobExecutionContext context) w C:\projects\Betreader\BetReader.Service\Core\Jobs\BbFeedReadJob.cs:wiersz 37
+2017-07-21 13:19:54.7408 : Exception : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"tag name","selector":"a"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.26.436362 (5476ec6bf7ccbada1734a0cdec7d570bb042aa30),platform=Windows NT 10.0.14393 x86_64)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElementByTagName(String tagName)
+   w OpenQA.Selenium.By.<>c__DisplayClass1a.<TagName>b__18(ISearchContext context)
+   w OpenQA.Selenium.By.FindElement(ISearchContext context)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)
+   w BetReader.Scraper.Helpers.GetHrefNode(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Helpers.cs:wiersz 10
+   w BetReader.Scraper.Core.Factories.CouponFactory.SetCouponUrl(Coupon coupon, IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 122
+   w BetReader.Scraper.Core.Factories.CouponFactory.GetCoupon(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 25
+   w BetReader.Scraper.Core.FeedScraper.<GetValuableCoupons>d__2.MoveNext() w C:\projects\Betreader\BetReader.Scraper\Core\FeedScraper.cs:wiersz 43
+   w System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   w System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   w BetReader.Service.Core.Jobs.BbFeedReadJob.Execute(IJobExecutionContext context) w C:\projects\Betreader\BetReader.Service\Core\Jobs\BbFeedReadJob.cs:wiersz 37
+2017-07-21 13:21:16.1471 : Exception : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"tag name","selector":"a"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.26.436362 (5476ec6bf7ccbada1734a0cdec7d570bb042aa30),platform=Windows NT 10.0.14393 x86_64)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   w OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElementByTagName(String tagName)
+   w OpenQA.Selenium.By.<>c__DisplayClass1a.<TagName>b__18(ISearchContext context)
+   w OpenQA.Selenium.By.FindElement(ISearchContext context)
+   w OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)
+   w BetReader.Scraper.Helpers.GetHrefNode(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Helpers.cs:wiersz 10
+   w BetReader.Scraper.Core.Factories.CouponFactory.SetCouponUrl(Coupon coupon, IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 122
+   w BetReader.Scraper.Core.Factories.CouponFactory.GetCoupon(IWebElement source) w C:\projects\Betreader\BetReader.Scraper\Core\Factories\CouponFactory.cs:wiersz 25
+   w BetReader.Scraper.Core.FeedScraper.<GetValuableCoupons>d__2.MoveNext() w C:\projects\Betreader\BetReader.Scraper\Core\FeedScraper.cs:wiersz 43
+   w System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   w System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   w BetReader.Service.Core.Jobs.BbFeedReadJob.Execute(IJobExecutionContext context) w C:\projects\Betreader\BetReader.Service\Core\Jobs\BbFeedReadJob.cs:wiersz 37
+2017-08-07 19:02:57.9256 : Exception : Microsoft.Practices.Unity.ResolutionFailedException: Resolution of the dependency failed, type = "BetReader.DataAccess.Database.Repositores.ICouponRepository", name = "(none)".
+Exception occurred while: while resolving.
+Exception is: InvalidOperationException - The current type, System.Data.Common.DbConnection, is an abstract class and cannot be constructed. Are you missing a type mapping?
+-----------------------------------------------
+At the time of the exception, the container was:
+
+  Resolving BetReader.DataAccess.Database.Repositores.CouponRepository,(none) (mapped from BetReader.DataAccess.Database.Repositores.ICouponRepository, (none))
+  Resolving parameter "context" of constructor BetReader.DataAccess.Database.Repositores.CouponRepository(Betreader.DataAccess.Database.BetReaderContext context)
+    Resolving Betreader.DataAccess.Database.BetReaderContext,(none)
+    Resolving parameter "connection" of constructor Betreader.DataAccess.Database.BetReaderContext(System.Data.Common.DbConnection connection)
+      Resolving System.Data.Common.DbConnection,(none)
+ ---> System.InvalidOperationException: The current type, System.Data.Common.DbConnection, is an abstract class and cannot be constructed. Are you missing a type mapping?
+   w Microsoft.Practices.ObjectBuilder2.DynamicMethodConstructorStrategy.ThrowForAttemptingToConstructAbstractClass(IBuilderContext context)
+   w lambda_method(Closure , IBuilderContext )
+   w Microsoft.Practices.ObjectBuilder2.DynamicBuildPlanGenerationContext.<>c__DisplayClass1.<GetBuildMethod>b__0(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.BuilderContext.NewBuildUp(NamedTypeBuildKey newBuildKey)
+   w Microsoft.Practices.Unity.ObjectBuilder.NamedTypeDependencyResolverPolicy.Resolve(IBuilderContext context)
+   w lambda_method(Closure , IBuilderContext )
+   w Microsoft.Practices.ObjectBuilder2.DynamicBuildPlanGenerationContext.<>c__DisplayClass1.<GetBuildMethod>b__0(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.BuilderContext.NewBuildUp(NamedTypeBuildKey newBuildKey)
+   w Microsoft.Practices.Unity.ObjectBuilder.NamedTypeDependencyResolverPolicy.Resolve(IBuilderContext context)
+   w lambda_method(Closure , IBuilderContext )
+   w Microsoft.Practices.ObjectBuilder2.DynamicBuildPlanGenerationContext.<>c__DisplayClass1.<GetBuildMethod>b__0(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)
+   w Microsoft.Practices.Unity.UnityContainer.DoBuildUp(Type t, Object existing, String name, IEnumerable`1 resolverOverrides)
+   --- Koniec œladu stosu wyj¹tków wewnêtrznych ---
+   w Microsoft.Practices.Unity.UnityContainer.DoBuildUp(Type t, Object existing, String name, IEnumerable`1 resolverOverrides)
+   w Microsoft.Practices.Unity.UnityContainer.Resolve(Type t, String name, ResolverOverride[] resolverOverrides)
+   w Microsoft.Practices.Unity.UnityContainerExtensions.Resolve[T](IUnityContainer container, ResolverOverride[] overrides)
+   w BetReader.Service.Core.Jobs.BbFeedReadJob.Execute(IJobExecutionContext context) w C:\projects\Betreader\BetReader.Service\Core\Jobs\BbFeedReadJob.cs:wiersz 30
+2017-08-07 19:04:06.6453 : Exception : Microsoft.Practices.Unity.ResolutionFailedException: Resolution of the dependency failed, type = "BetReader.DataAccess.Database.Repositores.ICouponRepository", name = "(none)".
+Exception occurred while: while resolving.
+Exception is: InvalidOperationException - The current type, System.Data.Common.DbConnection, is an abstract class and cannot be constructed. Are you missing a type mapping?
+-----------------------------------------------
+At the time of the exception, the container was:
+
+  Resolving BetReader.DataAccess.Database.Repositores.CouponRepository,(none) (mapped from BetReader.DataAccess.Database.Repositores.ICouponRepository, (none))
+  Resolving parameter "context" of constructor BetReader.DataAccess.Database.Repositores.CouponRepository(Betreader.DataAccess.Database.BetReaderContext context)
+    Resolving Betreader.DataAccess.Database.BetReaderContext,(none)
+    Resolving parameter "connection" of constructor Betreader.DataAccess.Database.BetReaderContext(System.Data.Common.DbConnection connection)
+      Resolving System.Data.Common.DbConnection,(none)
+ ---> System.InvalidOperationException: The current type, System.Data.Common.DbConnection, is an abstract class and cannot be constructed. Are you missing a type mapping?
+   w Microsoft.Practices.ObjectBuilder2.DynamicMethodConstructorStrategy.ThrowForAttemptingToConstructAbstractClass(IBuilderContext context)
+   w lambda_method(Closure , IBuilderContext )
+   w Microsoft.Practices.ObjectBuilder2.DynamicBuildPlanGenerationContext.<>c__DisplayClass1.<GetBuildMethod>b__0(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.BuilderContext.NewBuildUp(NamedTypeBuildKey newBuildKey)
+   w Microsoft.Practices.Unity.ObjectBuilder.NamedTypeDependencyResolverPolicy.Resolve(IBuilderContext context)
+   w lambda_method(Closure , IBuilderContext )
+   w Microsoft.Practices.ObjectBuilder2.DynamicBuildPlanGenerationContext.<>c__DisplayClass1.<GetBuildMethod>b__0(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.BuilderContext.NewBuildUp(NamedTypeBuildKey newBuildKey)
+   w Microsoft.Practices.Unity.ObjectBuilder.NamedTypeDependencyResolverPolicy.Resolve(IBuilderContext context)
+   w lambda_method(Closure , IBuilderContext )
+   w Microsoft.Practices.ObjectBuilder2.DynamicBuildPlanGenerationContext.<>c__DisplayClass1.<GetBuildMethod>b__0(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)
+   w Microsoft.Practices.Unity.UnityContainer.DoBuildUp(Type t, Object existing, String name, IEnumerable`1 resolverOverrides)
+   --- Koniec œladu stosu wyj¹tków wewnêtrznych ---
+   w Microsoft.Practices.Unity.UnityContainer.DoBuildUp(Type t, Object existing, String name, IEnumerable`1 resolverOverrides)
+   w Microsoft.Practices.Unity.UnityContainer.DoBuildUp(Type t, String name, IEnumerable`1 resolverOverrides)
+   w Microsoft.Practices.Unity.UnityContainer.Resolve(Type t, String name, ResolverOverride[] resolverOverrides)
+   w Microsoft.Practices.Unity.UnityContainerExtensions.Resolve[T](IUnityContainer container, ResolverOverride[] overrides)
+   w BetReader.Service.Core.Jobs.BbFeedReadJob.Execute(IJobExecutionContext context) w C:\projects\Betreader\BetReader.Service\Core\Jobs\BbFeedReadJob.cs:wiersz 30
+2017-08-07 19:05:06.8720 : Exception : Microsoft.Practices.Unity.ResolutionFailedException: Resolution of the dependency failed, type = "BetReader.DataAccess.Database.Repositores.ICouponRepository", name = "(none)".
+Exception occurred while: while resolving.
+Exception is: InvalidOperationException - The current type, System.Data.Common.DbConnection, is an abstract class and cannot be constructed. Are you missing a type mapping?
+-----------------------------------------------
+At the time of the exception, the container was:
+
+  Resolving BetReader.DataAccess.Database.Repositores.CouponRepository,(none) (mapped from BetReader.DataAccess.Database.Repositores.ICouponRepository, (none))
+  Resolving parameter "context" of constructor BetReader.DataAccess.Database.Repositores.CouponRepository(Betreader.DataAccess.Database.BetReaderContext context)
+    Resolving Betreader.DataAccess.Database.BetReaderContext,(none)
+    Resolving parameter "connection" of constructor Betreader.DataAccess.Database.BetReaderContext(System.Data.Common.DbConnection connection)
+      Resolving System.Data.Common.DbConnection,(none)
+ ---> System.InvalidOperationException: The current type, System.Data.Common.DbConnection, is an abstract class and cannot be constructed. Are you missing a type mapping?
+   w Microsoft.Practices.ObjectBuilder2.DynamicMethodConstructorStrategy.ThrowForAttemptingToConstructAbstractClass(IBuilderContext context)
+   w lambda_method(Closure , IBuilderContext )
+   w Microsoft.Practices.ObjectBuilder2.DynamicBuildPlanGenerationContext.<>c__DisplayClass1.<GetBuildMethod>b__0(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.BuilderContext.NewBuildUp(NamedTypeBuildKey newBuildKey)
+   w Microsoft.Practices.Unity.ObjectBuilder.NamedTypeDependencyResolverPolicy.Resolve(IBuilderContext context)
+   w lambda_method(Closure , IBuilderContext )
+   w Microsoft.Practices.ObjectBuilder2.DynamicBuildPlanGenerationContext.<>c__DisplayClass1.<GetBuildMethod>b__0(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.BuilderContext.NewBuildUp(NamedTypeBuildKey newBuildKey)
+   w Microsoft.Practices.Unity.ObjectBuilder.NamedTypeDependencyResolverPolicy.Resolve(IBuilderContext context)
+   w lambda_method(Closure , IBuilderContext )
+   w Microsoft.Practices.ObjectBuilder2.DynamicBuildPlanGenerationContext.<>c__DisplayClass1.<GetBuildMethod>b__0(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   w Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)
+   w Microsoft.Practices.Unity.UnityContainer.DoBuildUp(Type t, Object existing, String name, IEnumerable`1 resolverOverrides)
+   --- Koniec œladu stosu wyj¹tków wewnêtrznych ---
+   w Microsoft.Practices.Unity.UnityContainer.DoBuildUp(Type t, Object existing, String name, IEnumerable`1 resolverOverrides)
+   w Microsoft.Practices.Unity.UnityContainer.DoBuildUp(Type t, String name, IEnumerable`1 resolverOverrides)
+   w Microsoft.Practices.Unity.UnityContainer.Resolve(Type t, String name, ResolverOverride[] resolverOverrides)
+   w Microsoft.Practices.Unity.UnityContainerExtensions.Resolve[T](IUnityContainer container, ResolverOverride[] overrides)
+   w BetReader.Service.Core.Jobs.BbFeedReadJob.Execute(IJobExecutionContext context) w C:\projects\Betreader\BetReader.Service\Core\Jobs\BbFeedReadJob.cs:wiersz 30

@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using BetReader.Api.Models.Database;
-using BetReader.Model.Entities;
+using Betreader.DataAccess.Database;
+using BetReader.Domain.Entities;
 
 namespace BetReader.Api.Models.Repositores
 {

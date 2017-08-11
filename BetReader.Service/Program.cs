@@ -1,55 +1,57 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Web.Http;
-using BetReader.Api.Controllers;
-using BetReader.Api.Models.Database;
-using BetReader.Api.Models.Repositores;
-using BetReader.Api.Models.Services;
-using BetReader.Constans;
-using BetReader.Model.Entities;
-using BetReader.Scraper;
-using BetReader.Scraper.Core;
-using BetReader.Service.Core.DataAccess;
+using Betreader.DataAccess.Database;
+using BetReader.DataAccess.Database.Repositores;
+using BetReader.Domain.Readers.BbRead;
 using BetReader.Service.Core.Jobs;
-using HtmlAgilityPack;
 using Microsoft.Practices.Unity;
-using OpenQA.Selenium.Chrome;
+using NLog;
 using Quartz;
 using Quartz.Impl;
 
 namespace BetReader.Service
 {
+    public class Settings
+    {
+        public int ReadMinInterval { get; set; } = 60;
+        public int ReadMaxInterval { get; set; } = 100;
+        public int ResolveMinInterval { get; set; } = 60;
+        public int ResolveMaxInterval { get; set; } = 100;
+        public int MinCouponsCount { get; set; } = 50;
+        public double MinYield { get; set; } = 0.05;
+    }
+
     class Program
     {
         static void Main(string[] args)
         {
+            var settings = new Settings();
             var container = new UnityContainer();
             var rnd = new Random();
 
-            container.RegisterType<FeedScraper, FeedScraper>();
+            container.RegisterType<BbCouponReader, BbCouponReader>();
             container.RegisterType<BbFeedReadJob, BbFeedReadJob>();
-            container.RegisterType<IDataProvider, ApiWrapper>(new HierarchicalLifetimeManager());
+            container.RegisterType<ICouponRepository, CouponRepository>(new HierarchicalLifetimeManager());
+            container.RegisterType<BetReaderContext>(new InjectionConstructor());
 
-            //container.RegisterType<ApiController, BetController>();
-            //container.RegisterType<CouponService, CouponService>();
-            //container.RegisterType<ICouponRepository, CouponRepository>();
-            //container.RegisterType<BetReaderContext, BetReaderContext> ();
+//            while (true)
+//            {
+//                var reader = new BbCouponReader(new ChromeDriver(GlobalConstants.ChromeDriverPath), GlobalConstants.LiveBbUrl);
+//                var couponRepo = container.Resolve<ICouponRepository>();
+//
+//                using (reader)
+//                {
+//                    List<Coupon> coupons = reader.GetAll(0, 0).ToList();
+//                    LogManager.GetLogger("main").Info($"{coupons.Count} valuable coupons were read.");
+//
+//                    couponRepo.CreateBulk(coupons);
+//                }
+//
+//                var wait = new Random().Next(10, 35);
+//                wait = 20;
+//                Thread.Sleep(new TimeSpan(0, 0, wait));
+//            }
 
-            while (true)
-            {
-                var processor = new FeedScraper(new ChromeDriver(GlobalConstants.ChromeDriverPath));
-                var wrapper = container.Resolve<IDataProvider>();
-
-                using (processor)
-                {
-                    List<Coupon> coupons = processor.GetValuableCoupons(GlobalConstants.LiveBbUrl).ToList();
-                    wrapper.AddCouponsToPlay(coupons);
-                }
-
-                Thread.Sleep(new TimeSpan(0, 1, 0));
-            }
 
             //            while (true)
             //            {
@@ -73,7 +75,7 @@ namespace BetReader.Service
 
             var jobs = new List<IJobDetail>();
             jobs.Add(JobBuilder.Create<BbFeedReadJob>().Build());
-            jobs.Add(JobBuilder.Create<BbFeedResolveJob>().Build());
+            //jobs.Add(JobBuilder.Create<BbFeedResolveJob>().Build());
 
             int counter = 1;
             foreach (IJobDetail job in jobs)
@@ -84,6 +86,7 @@ namespace BetReader.Service
                     job.JobDataMap["rnd"] = rnd;
                     job.JobDataMap["unityContainer"] = container;
                     job.JobDataMap["triggerKey"] = triggerName;
+                    job.JobDataMap["settings"] = settings;
 
                     ITrigger trigger = TriggerBuilder.Create()
                         .WithIdentity(new TriggerKey(triggerName))
@@ -94,7 +97,9 @@ namespace BetReader.Service
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(ex);
+                    var logger = LogManager.GetLogger("errors");
+                    logger.Info($"Exception : {ex}");
+                    throw;
                 }
                 finally
                 {

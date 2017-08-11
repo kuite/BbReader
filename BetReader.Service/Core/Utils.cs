@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NLog;
 using Quartz;
 
 namespace BetReader.Service.Core
@@ -23,9 +24,11 @@ namespace BetReader.Service.Core
 
                 context.Scheduler.RescheduleJob(currentTrigger.Key, newTrigger);
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                Console.WriteLine(e.Message);
+                var logger = LogManager.GetLogger("errors");
+                logger.Info($"Exception : {ex}");
+                throw;
             }
 
         }

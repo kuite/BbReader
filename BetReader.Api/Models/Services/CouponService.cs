@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using BetReader.Api.Models.Repositores;
-using BetReader.Model.Entities;
+using BetReader.Domain.Entities;
 
 namespace BetReader.Api.Models.Services
 {
@@ -18,45 +18,45 @@ namespace BetReader.Api.Models.Services
 
         public IEnumerable<Coupon> GetCouponsInPlay()
         {
-            return couponRepository.GetAll().Where(c =>
-                c.IsPlayed &&
-                c.IsResolved == false).ToList();
+            //            return couponRepository.GetAll().Where(c =>
+            //                c.IsPlayed &&
+            //                c.IsResolved == false).ToList();
+            return new List<Coupon>();
         }
 
         public void SetCouponsInProgress(IEnumerable<int> ids)
         {
-            foreach (var couponId in ids)
-            {
-                Coupon coupon = couponRepository.GetById(couponId);
-                coupon.IsPlayed = true;
-                couponRepository.Update(coupon);
-            }
+//            foreach (var couponId in ids)
+//            {
+//                Coupon coupon = couponRepository.GetById(couponId);
+//                coupon.IsPlayed = true;
+//                couponRepository.Update(coupon);
+//            }
         }
 
         public bool DismissCoupons(IEnumerable<int> ids)
         {
-            foreach (var couponId in ids)
-            {
-                Coupon coupon = couponRepository.GetById(couponId);
-                coupon.IsDismissed = true;
-                couponRepository.Update(coupon);
-            }
+            //            foreach (var couponId in ids)
+            //            {
+            //                Coupon coupon = couponRepository.GetById(couponId);
+            //                //coupon.IsDismissed = true;
+            //                couponRepository.Update(coupon);
+            //            }
             return true;
         }
 
         public IEnumerable<Coupon> GetCouponsToPlay()
         {
-            return couponRepository.GetAll().Where(c =>
-                c.IsResolved == false &&
-                c.IsPlayed == false &&
-                c.IsDismissed == false).ToList();
+            throw new NotImplementedException();
+//            return couponRepository.GetAll().Where(c =>
+//                c.IsResolved == false).ToList();
         }
 
         public IEnumerable<Coupon> GetResolvedCoupons()
         {
-            return couponRepository.GetAll().Where(c =>
-                c.IsResolved &&
-                c.IsPlayed).ToList();
+            throw new NotImplementedException();
+            //            return couponRepository.GetAll().Where(c =>
+            //                c.IsResolved).ToList();
         }
 
         public bool AddCoupons(IEnumerable<Coupon> coupons)
@@ -89,17 +89,18 @@ namespace BetReader.Api.Models.Services
 
         private void AddAsUnique(Coupon coupon)
         {
-            var couponsToPlay = couponRepository.GetAll().
-                Where(c => c.IsResolved == false);
-
-            foreach (Coupon toPlay in couponsToPlay)
-            {
-                if (toPlay.Equals(coupon))
-                {
-                    return;
-                }
-            }
-            couponRepository.Add(coupon);
+            throw new NotImplementedException();
+            //            var couponsToPlay = couponRepository.GetAll().
+            //                Where(c => c.IsResolved == false);
+            //
+            //            foreach (Coupon toPlay in couponsToPlay)
+            //            {
+            //                if (toPlay.Equals(coupon))
+            //                {
+            //                    return;
+            //                }
+            //            }
+            //            couponRepository.Add(coupon);
         }
     }
 }

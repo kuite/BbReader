@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using BetReader.Constans;
-using BetReader.Model.Entities;
-using BetReader.Scraper.Core;
-using BetReader.Service.Core.DataAccess;
-using HtmlAgilityPack;
+using BetReader.DataAccess.Database.Repositores;
+using BetReader.Domain.Entities;
+using BetReader.Domain.Readers;
+using BetReader.Domain.Readers.BbRead;
+using BetReader.Domain.Readers.Interfaces;
 using Microsoft.Practices.Unity;
+using NLog;
 using OpenQA.Selenium.Chrome;
 using Quartz;
 
@@ -14,32 +16,32 @@ namespace BetReader.Service.Core.Jobs
 {
     public class BbFeedReadJob : IJob
     {
-        private FeedScraper processor;
-        private IDataProvider apiWrapper;
-        private UnityContainer container;
-
         public void Execute(IJobExecutionContext context)
         {
+            Settings settings = (Settings)context.MergedJobDataMap["settings"];
             try
             {
-                container = (UnityContainer)context.MergedJobDataMap["unityContainer"];
+                UnityContainer container = (UnityContainer)context.MergedJobDataMap["unityContainer"];
+                
+                var reader = new BbCouponReader(new ChromeDriver(GlobalConstants.ChromeDriverPath), GlobalConstants.LiveBbUrl);
+                var couponRepo = container.Resolve<ICouponRepository>();
 
-                processor = new FeedScraper(new ChromeDriver(GlobalConstants.ChromeDriverPath));
-                apiWrapper = container.Resolve<IDataProvider>();
-
-                context.RescheduleJob(40, 55);
-
-                using (processor)
+                using (reader)
                 {
-                    List<Coupon> coupons = processor.GetValuableCoupons(GlobalConstants.Url).ToList();
+                    List<Coupon> coupons = reader.GetAll(0.05, 50).ToList();
+                    LogManager.GetLogger("main").Info($"{coupons.Count} valuable coupons were read.");
 
-                    apiWrapper.AddCouponsToPlay(coupons);
+                    couponRepo.CreateBulk(coupons);
                 }
             }
-            catch (JobExecutionException e)
+            catch (Exception ex)
             {
-                Console.WriteLine(e.Message);
+                var logger = LogManager.GetLogger("errors");
+                logger.Info($"Exception : {ex}");
+                throw;
             }
+            context.RescheduleJob(settings.ReadMinInterval, settings.ReadMaxInterval);
         }
+
     }
 }

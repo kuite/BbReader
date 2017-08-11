@@ -167,28 +167,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="JwtManager.cs" />
-    <Compile Include="Models\Database\BetReaderContext.cs" />
-    <Compile Include="Models\Database\Migrations\201704292236036_InitMigration.cs" />
-    <Compile Include="Models\Database\Migrations\201704292236036_InitMigration.Designer.cs">
-      <DependentUpon>201704292236036_InitMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Database\Migrations\201705021908121_AddAuthentication.cs" />
-    <Compile Include="Models\Database\Migrations\201705021908121_AddAuthentication.Designer.cs">
-      <DependentUpon>201705021908121_AddAuthentication.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Database\Migrations\201705131919316_StakeAndIsLiveProperties.cs" />
-    <Compile Include="Models\Database\Migrations\201705131919316_StakeAndIsLiveProperties.Designer.cs">
-      <DependentUpon>201705131919316_StakeAndIsLiveProperties.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Database\Migrations\201705272025414_IndetityUserChanged.cs" />
-    <Compile Include="Models\Database\Migrations\201705272025414_IndetityUserChanged.Designer.cs">
-      <DependentUpon>201705272025414_IndetityUserChanged.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Database\Migrations\201706051642516_Discriminator.cs" />
-    <Compile Include="Models\Database\Migrations\201706051642516_Discriminator.Designer.cs">
-      <DependentUpon>201706051642516_Discriminator.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Database\Migrations\Configuration.cs" />
     <Compile Include="Models\Repositores\AuthRepository.cs" />
     <Compile Include="Models\Repositores\CouponRepository.cs" />
     <Compile Include="Models\Repositores\ICouponRepository.cs" />
@@ -207,27 +185,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BetReader.Model\BetReader.Model.csproj">
-      <Project>{50184761-9448-450D-9DA6-1111AD90B8AF}</Project>
-      <Name>BetReader.Model</Name>
+    <ProjectReference Include="..\BetReader.DataAccess\BetReader.DataAccess.csproj">
+      <Project>{5FD69004-38A5-440F-B541-E719719FB561}</Project>
+      <Name>BetReader.DataAccess</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Models\Database\Migrations\201704292236036_InitMigration.resx">
-      <DependentUpon>201704292236036_InitMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Models\Database\Migrations\201705021908121_AddAuthentication.resx">
-      <DependentUpon>201705021908121_AddAuthentication.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Models\Database\Migrations\201705131919316_StakeAndIsLiveProperties.resx">
-      <DependentUpon>201705131919316_StakeAndIsLiveProperties.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Models\Database\Migrations\201705272025414_IndetityUserChanged.resx">
-      <DependentUpon>201705272025414_IndetityUserChanged.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Models\Database\Migrations\201706051642516_Discriminator.resx">
-      <DependentUpon>201706051642516_Discriminator.cs</DependentUpon>
-    </EmbeddedResource>
+    <ProjectReference Include="..\BetReader.Domain\BetReader.Domain.csproj">
+      <Project>{50184761-9448-450D-9DA6-1111AD90B8AF}</Project>
+      <Name>BetReader.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
